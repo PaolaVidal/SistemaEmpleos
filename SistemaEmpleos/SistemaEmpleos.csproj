@@ -58,6 +58,12 @@
     <Compile Include="Formularios\RegistroNormal.Designer.cs">
       <DependentUpon>RegistroNormal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\verPostulantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\verPostulantes.Designer.cs">
+      <DependentUpon>verPostulantes.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModuloConexion\Conexion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -66,6 +72,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\RegistroNormal.resx">
       <DependentUpon>RegistroNormal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\verPostulantes.resx">
+      <DependentUpon>verPostulantes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
