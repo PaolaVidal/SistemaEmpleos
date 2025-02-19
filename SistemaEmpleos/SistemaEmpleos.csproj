@@ -64,6 +64,7 @@
     <Compile Include="Formularios\verPostulantes.Designer.cs">
       <DependentUpon>verPostulantes.cs</DependentUpon>
     </Compile>
+    <Compile Include="LogicaVerPostulante\VerPostulanteCRUD.cs" />
     <Compile Include="ModuloConexion\Conexion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

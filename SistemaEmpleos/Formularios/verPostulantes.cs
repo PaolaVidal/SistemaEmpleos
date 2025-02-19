@@ -7,14 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SistemaEmpleos.LogicaVerPostulante; // Importamos la clase
 
 namespace SistemaEmpleos.Formularios
 {
     public partial class verPostulantes : Form
     {
+        private VerPostulanteCRUD crud; // Instancia de VerPostulanteCRUD
+
         public verPostulantes()
         {
             InitializeComponent();
+
+            // Instanciamos la conexión con los parámetros del servidor y base de datos
+            crud = new VerPostulanteCRUD(@"(Localdb)\rodolfo server", "Empleo");
+
+            // Ahora sí podemos llamar a VerificarConexion
+            crud.VerificarConexion();
+            crud.LlenarPostulantes(this.dataGridView1);
+
             this.cbFiltro.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
