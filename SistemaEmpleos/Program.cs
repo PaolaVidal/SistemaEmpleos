@@ -20,7 +20,8 @@ namespace SistemaEmpleos
             Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
             verPostulantes verPostulantes = new verPostulantes();
-            Application.Run(new verPostulantes());
+			verOfertasEmpleos verOfertasEmpleos = new verOfertasEmpleos();
+            Application.Run(new verOfertasEmpleos());
 		}
 	}
 }
