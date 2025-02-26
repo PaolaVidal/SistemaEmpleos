@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using SistemaEmpleos.LogicaVerPostulante;
 using SistemaEmpleos.ModuloConexion; // Asegúrate de tener la clase Conexion
 
 namespace SistemaEmpleos.LogicaVerOfertasEmpleo
@@ -39,18 +40,24 @@ namespace SistemaEmpleos.LogicaVerOfertasEmpleo
         }
 
         /// <summary>
-        /// Obtiene una lista de ofertas de trabajo para una empresa específica con paginación.
+        /// Obtiene una lista de ofertas en las que un candidato se ha inscrito, con paginación.
         /// </summary>
-        public List<(string titulo, DateTime fechaPublicacion)> ObtenerOfertasPorEmpresa(int idEmpresa, int pagina)
+        public List<OfertaEmpleo> ObtenerOfertasPorCandidato(int idUsuario, int pagina)
         {
-            List<(string, DateTime)> ofertas = new List<(string, DateTime)>();
+            List<OfertaEmpleo> ofertas = new List<OfertaEmpleo>();
             try
             {
                 if (conexion.AbrirConexion())
                 {
-                    using (SqlCommand cmd = new SqlCommand("SELECT titulo, fecha_publicacion FROM OfertaEmpleo WHERE Id_empresa = @IdEmpresa ORDER BY fecha_publicacion DESC OFFSET @Offset ROWS FETCH NEXT @Limit ROWS ONLY", conexion.Conexion_))
+                    using (SqlCommand cmd = new SqlCommand(@"
+                        SELECT oe.titulo, oe.fecha_publicacion, oe.estado 
+                        FROM OfertaCandidatos oc 
+                        JOIN OfertaEmpleo oe ON oc.id_oferta_empleo = oe.id_oferta_empleo 
+                        WHERE oc.id_usuario = @IdUsuario 
+                        ORDER BY oe.fecha_publicacion DESC 
+                        OFFSET @Offset ROWS FETCH NEXT @Limit ROWS ONLY", conexion.Conexion_))
                     {
-                        cmd.Parameters.AddWithValue("@IdEmpresa", idEmpresa);
+                        cmd.Parameters.AddWithValue("@IdUsuario", idUsuario);
                         cmd.Parameters.AddWithValue("@Offset", pagina * registrosPorPagina);
                         cmd.Parameters.AddWithValue("@Limit", registrosPorPagina);
 
@@ -58,9 +65,13 @@ namespace SistemaEmpleos.LogicaVerOfertasEmpleo
                         {
                             while (reader.Read())
                             {
-                                string titulo = reader.GetString(0);
-                                DateTime fecha = reader.GetDateTime(1);
-                                ofertas.Add((titulo, fecha));
+                                OfertaEmpleo oferta = new OfertaEmpleo
+                                {
+                                    Titulo = reader.GetString(0),
+                                    FechaPublicacion = reader.GetDateTime(1),
+                                    Estado = reader.GetString(2) // Aquí se obtiene correctamente la columna 'estado' de la tabla 'OfertaEmpleo'
+                                };
+                                ofertas.Add(oferta);
                             }
                         }
                     }
@@ -76,21 +87,21 @@ namespace SistemaEmpleos.LogicaVerOfertasEmpleo
         }
 
         /// <summary>
-        /// Avanza a la siguiente página de ofertas.
+        /// Avanza a la siguiente página de ofertas en las que el candidato está inscrito.
         /// </summary>
-        public List<(string titulo, DateTime fechaPublicacion)> SiguientePagina(int idEmpresa)
+        public List<OfertaEmpleo> SiguientePagina(int idUsuario)
         {
             paginaActual++;
-            return ObtenerOfertasPorEmpresa(idEmpresa, paginaActual);
+            return ObtenerOfertasPorCandidato(idUsuario, paginaActual);
         }
 
         /// <summary>
-        /// Retrocede a la página anterior de ofertas.
+        /// Retrocede a la página anterior de ofertas en las que el candidato está inscrito.
         /// </summary>
-        public List<(string titulo, DateTime fechaPublicacion)> PaginaAnterior(int idEmpresa)
+        public List<OfertaEmpleo> PaginaAnterior(int idUsuario)
         {
             if (paginaActual > 0) paginaActual--;
-            return ObtenerOfertasPorEmpresa(idEmpresa, paginaActual);
+            return ObtenerOfertasPorCandidato(idUsuario, paginaActual);
         }
     }
 }
