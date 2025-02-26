@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemaEmpleos.Formularios;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -13,12 +14,16 @@ namespace SistemaEmpleos
 		/// <summary>
 		/// Punto de entrada principal para la aplicación.
 		/// </summary>
-		[STAThread]
+		
+        [STAThread]
 		static void Main()
 		{
-			Application.EnableVisualStyles();
+            
+            Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Registro1());
+            verPostulantes verPostulantes = new verPostulantes();
+			verOfertasEmpleos verOfertasEmpleos = new verOfertasEmpleos();
+            Application.Run(new verOfertasEmpleos());
 		}
 	}
 }
