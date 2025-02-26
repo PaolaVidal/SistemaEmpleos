@@ -59,8 +59,6 @@ namespace SistemaEmpleos.Formularios
             string filtro = cbFiltro.SelectedItem?.ToString();  // Obtenemos el filtro seleccionado como string
             string textoBusqueda = txtDatoFiltrar.Text;  // Obtenemos el texto ingresado en el TextBox
 
-            // Llamamos al método FiltrarPostulantes con el texto y el filtro seleccionado
-            crud.FiltrarPostulantes(dataGridView1, textoBusqueda, filtro, 2);  // Aplicamos el filtro al DataGridView
         }
 
         private void cbFiltro_TextChanged(object sender, EventArgs e)
