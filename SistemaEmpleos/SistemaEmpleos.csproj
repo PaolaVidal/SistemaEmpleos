@@ -46,11 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\Obj_Usuario.cs" />
+    <Compile Include="Formularios\Form_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form_Home.Designer.cs">
+      <DependentUpon>Form_Home.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Registro1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\Registro1.Designer.cs">
       <DependentUpon>Registro1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\RegistroEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\RegistroEmpresa.Designer.cs">
+      <DependentUpon>RegistroEmpresa.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\RegistroNormal.cs">
       <SubType>Form</SubType>
@@ -59,10 +72,16 @@
       <DependentUpon>RegistroNormal.cs</DependentUpon>
     </Compile>
     <Compile Include="ModuloConexion\Conexion.cs" />
+    <Compile Include="ModuloUsuario\Empresa.cs" />
+    <Compile Include="ModuloUsuario\Postulante.cs" />
+    <Compile Include="ModuloUsuario\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\Registro1.resx">
       <DependentUpon>Registro1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\RegistroEmpresa.resx">
+      <DependentUpon>RegistroEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\RegistroNormal.resx">
       <DependentUpon>RegistroNormal.cs</DependentUpon>
@@ -75,6 +94,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -89,9 +109,10 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Clases\" />
-    <Folder Include="Resources\" />
+    <Content Include="Resources\Black and Blue Geometric Job Seeker Employment Logo %28518 x 438 px%29 %282%29.png" />
+    <None Include="Resources\Black and Blue Geometric Job Seeker Employment Logo %28518 x 438 px%29 %282%291.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
