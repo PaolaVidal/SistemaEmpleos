@@ -239,6 +239,7 @@
 			this.label6.TabIndex = 7;
 			this.label6.Text = "Nombre";
 			this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.label6.Click += new System.EventHandler(this.label6_Click);
 			// 
 			// label4
 			// 

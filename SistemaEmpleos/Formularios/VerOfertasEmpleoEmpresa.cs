@@ -19,7 +19,7 @@ namespace SistemaEmpleos.Formularios
         public VerOfertasEmpleoEmpresa()
         {
             InitializeComponent();
-            crud = new verOfertasEmpleoEmpresaCrud(@"(Localdb)\rodolfo server", "Empleo");
+            crud = new verOfertasEmpleoEmpresaCrud(@"VALERIAV\MSSQLSERVER01", "Empleo2");
             crud.VerificarConexion(); // Verificamos la conexión
             CargarOfertasEmpresa(); // Cargar las ofertas de la empresa al iniciar
         }

@@ -23,7 +23,7 @@ namespace SistemaEmpleos.Formularios
         {
             InitializeComponent();
             // Instanciamos la conexión con los parámetros del servidor y base de datos
-            crud = new verOfertaEmpleoCRUD(@"(Localdb)\rodolfo server", "Empleo");
+            crud = new verOfertaEmpleoCRUD(@"VALERIAV\MSSQLSERVER01", "Empleo2");
             crud.VerificarConexion(); // Verificamos la conexión
             CargarPostulaciones(); // Cargar las primeras ofertas al iniciar
         }

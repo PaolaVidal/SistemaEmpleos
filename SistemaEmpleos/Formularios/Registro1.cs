@@ -35,22 +35,64 @@ namespace SistemaEmpleos
 		private void button1_Click(object sender, EventArgs e)
 		{
 			
+			//string EmailTxt = txt_email.Text.Trim();
+			//string contrasenaTxt = txt_Contrasena.Text.Trim();
+
+			//Usuario user = new Usuario();
+
+			//if (user.ObtenerUsuario(EmailTxt))
+			//{
+			//	if (user.VerificarContrasena(EmailTxt, contrasenaTxt))
+			//	{
+			//		MessageBox.Show("Ingreso exitoso");
+
+			//		this.Hide();
+			//		Form_Home home = new Form_Home();
+			//		Obj_Usuario.id_usuario = user.Id_usuario; 
+			//		home.Show();
+					
+			//	}
+			//	else
+			//	{
+			//		MessageBox.Show("Correo o contraseña incorrectos");
+			//	}
+			//}
+			//else
+			//{
+			//	MessageBox.Show("El correo no está registrado. Por favor, regístrate antes de iniciar sesión.");
+			//}
+
+
 			string EmailTxt = txt_email.Text.Trim();
 			string contrasenaTxt = txt_Contrasena.Text.Trim();
 
 			Usuario user = new Usuario();
 
-			if (user.ObtenerUsuario(EmailTxt))
+			if (user.ObtenerUsuario(EmailTxt))  
 			{
-				if (user.VerificarContrasena(EmailTxt, contrasenaTxt))
+				if (user.VerificarContrasena(EmailTxt, contrasenaTxt))  
 				{
 					MessageBox.Show("Ingreso exitoso");
 
-					this.Hide();
-					Form_Home home = new Form_Home();
-					Obj_Usuario.id_usuario = user.Id_usuario; 
-					home.Show();
+					this.Hide();  
+					Obj_Usuario.id_usuario = user.Id_usuario;
+
 					
+					if (user.Tipo_usuario == "P")
+					{
+						Form_Perfil_Postulante formPostulante = new Form_Perfil_Postulante();
+						formPostulante.Show();
+					}
+					else if (user.Tipo_usuario == "E")
+					{
+						Form_Perfil_Empresa formEmpresa = new Form_Perfil_Empresa();
+						formEmpresa.Show();
+					}
+					else
+					{
+						MessageBox.Show("Tipo de usuario no reconocido.");
+						this.Show();  
+					}
 				}
 				else
 				{

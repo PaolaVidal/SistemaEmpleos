@@ -24,7 +24,13 @@ namespace SistemaEmpleos
             verPostulantes verPostulantes = new verPostulantes();
 			verOfertasEmpleos verOfertasEmpleos = new verOfertasEmpleos();
 			VerOfertasEmpleoEmpresa verOfertasEmpleoEmpresa = new VerOfertasEmpleoEmpresa();
-            Application.Run(new VerOfertasEmpleoEmpresa());
+           // Application.Run(new VerOfertasEmpleoEmpresa());
+
+
+			Registro1 registro1 = new Registro1();
+			Application.Run(new Registro1());
+
+
 		}
 	}
 }
