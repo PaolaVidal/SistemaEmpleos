@@ -11,9 +11,22 @@ using System.Windows.Forms;
 
 namespace SistemaEmpleos.Formularios
 {
-	public partial class RegistroNormal : Form
-
+	public partial class RegistroEmpresa : Form
 	{
+		public RegistroEmpresa()
+		{
+			InitializeComponent();
+		}
+
+		private void label1_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void label3_Click(object sender, EventArgs e)
+		{
+
+		}
 
 		private List<string> ValidarContrasenia(string contrasenia)
 		{
@@ -34,40 +47,30 @@ namespace SistemaEmpleos.Formularios
 			return errores;
 		}
 
-		public RegistroNormal()
+
+
+		private void button1_Click(object sender, EventArgs e)
 		{
-			InitializeComponent();
-		
-		}
-
-		private void textBox2_TextChanged(object sender, EventArgs e)
-		{
-
-		}
-
-		
-		private void btnRegistrarseP_Click(object sender, EventArgs e)
-		{
-
 			string nombre = txtNombre.Text.Trim();
 			string email = txtEmail.Text.Trim();
 			string contrasenia = txtContrasena.Text.Trim();
 			string confirmarContrasenia = txtConfirmarContrasena.Text.Trim();
 			string direccion = txtDireccion.Text.Trim();
 			string telefono = txtTelefono.Text.Trim();
+			string sector = txtSector.Text.Trim();
+			string descripcion = txtDescripcion.Text.Trim();
 
-			
 			List<string> camposFaltantes = new List<string>();
 
-			
 			if (string.IsNullOrEmpty(nombre)) camposFaltantes.Add("Nombre");
 			if (string.IsNullOrEmpty(email)) camposFaltantes.Add("Email");
 			if (string.IsNullOrEmpty(contrasenia)) camposFaltantes.Add("Contraseña");
 			if (string.IsNullOrEmpty(confirmarContrasenia)) camposFaltantes.Add("Confirmar Contraseña");
 			if (string.IsNullOrEmpty(direccion)) camposFaltantes.Add("Dirección");
 			if (string.IsNullOrEmpty(telefono)) camposFaltantes.Add("Teléfono");
+			if (string.IsNullOrEmpty(sector)) camposFaltantes.Add("Sector");
+			if (string.IsNullOrEmpty(descripcion)) camposFaltantes.Add("Descripción");
 
-			
 			if (camposFaltantes.Count > 0)
 			{
 				MessageBox.Show($"Por favor, completa los siguientes campos:\n- {string.Join("\n- ", camposFaltantes)}",
@@ -75,7 +78,6 @@ namespace SistemaEmpleos.Formularios
 				return;
 			}
 
-			
 			List<string> erroresContrasenia = ValidarContrasenia(contrasenia);
 
 			if (erroresContrasenia.Count > 0)
@@ -83,12 +85,11 @@ namespace SistemaEmpleos.Formularios
 				MessageBox.Show($"La contraseña no cumple con los siguientes requisitos:\n- {string.Join("\n- ", erroresContrasenia)}",
 					"Contraseña Inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 				txtContrasena.Clear();
-				txtConfirmarContrasena.Clear();
+				txtConfirmarContrasena.Clear();  
 				txtContrasena.Focus();
 				return;
 			}
 
-			
 			if (contrasenia != confirmarContrasenia)
 			{
 				MessageBox.Show("Las contraseñas no coinciden. Por favor, verifica e inténtalo de nuevo.",
@@ -100,34 +101,14 @@ namespace SistemaEmpleos.Formularios
 			}
 
 			
-			Postulante nuevoPostulante = new Postulante
+			Empresa nuevaEmpresa = new Empresa
 			{
 				Email = email,
 				Contrasenia = contrasenia
 			};
-			nuevoPostulante.CrearUsuarioPostulante(nombre, direccion, txtEmail, telefono, this);
+			nuevaEmpresa.CrearUsuarioEmpresa(nombre, direccion, telefono, sector, descripcion, txtEmail, this);
 
-		}
-
-		private void panel1_Paint(object sender, PaintEventArgs e)
-		{
-
-		}
-
-		private void button2_Click(object sender, EventArgs e)
-		{
 			
-
-			RegistroEmpresa registroEmpresaForm = new RegistroEmpresa();
-			this.Hide(); 
-			registroEmpresaForm.ShowDialog();
-			
-
-		}
-
-		private void label9_Click(object sender, EventArgs e)
-		{
-
 		}
 
 		private void txtConfirmarContrasena_TextChanged(object sender, EventArgs e)

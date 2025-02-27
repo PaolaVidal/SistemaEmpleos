@@ -59,5 +59,15 @@ namespace SistemaEmpleos.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Black_and_Blue_Geometric_Job_Seeker_Employment_Logo__518_x_438_px___2_ {
+            get {
+                object obj = ResourceManager.GetObject("Black and Blue Geometric Job Seeker Employment Logo (518 x 438 px) (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
