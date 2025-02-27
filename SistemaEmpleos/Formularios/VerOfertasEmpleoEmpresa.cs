@@ -19,9 +19,15 @@ namespace SistemaEmpleos.Formularios
         public VerOfertasEmpleoEmpresa()
         {
             InitializeComponent();
-            crud = new verOfertasEmpleoEmpresaCrud(@"VALERIAV\MSSQLSERVER01", "Empleo2");
+            crud = new verOfertasEmpleoEmpresaCrud(@"(Localdb)\rodolfo server", "Empleo");
             crud.VerificarConexion(); // Verificamos la conexión
             CargarOfertasEmpresa(); // Cargar las ofertas de la empresa al iniciar
+
+            // Asignar eventos Click a los labels
+            lbNombreTrabajo.Click += lbNombreTrabajo_Click;
+            lbNombreTrabajo2.Click += lbNombreTrabajo_Click;
+            lbNombreTrabajo3.Click += lbNombreTrabajo_Click;
+            lbNombreTrabajo4.Click += lbNombreTrabajo_Click;
         }
 
         private void CargarOfertasEmpresa()
@@ -33,10 +39,18 @@ namespace SistemaEmpleos.Formularios
         private void ActualizarInterfaz(List<verOfertasEmpleoEmpresa> ofertas)
         {
             // Actualizamos los títulos de las ofertas
+            // Asignar títulos y almacenar ID en Tag
             lbNombreTrabajo.Text = ofertas.Count > 0 ? ofertas[0].Titulo : "Sin oferta";
+            lbNombreTrabajo.Tag = ofertas.Count > 0 ? ofertas[0].Id : (object)null;
+
             lbNombreTrabajo2.Text = ofertas.Count > 1 ? ofertas[1].Titulo : "Sin oferta";
+            lbNombreTrabajo2.Tag = ofertas.Count > 1 ? ofertas[1].Id : (object)null;
+
             lbNombreTrabajo3.Text = ofertas.Count > 2 ? ofertas[2].Titulo : "Sin oferta";
+            lbNombreTrabajo3.Tag = ofertas.Count > 2 ? ofertas[2].Id : (object)null;
+
             lbNombreTrabajo4.Text = ofertas.Count > 3 ? ofertas[3].Titulo : "Sin oferta";
+            lbNombreTrabajo4.Tag = ofertas.Count > 3 ? ofertas[3].Id : (object)null;
 
             // Actualizamos las fechas de publicación
             lbFechaPostulacion.Text = ofertas.Count > 0 ? ofertas[0].FechaPublicacion.ToString("dd/MM/yyyy") : "N/A";
@@ -44,6 +58,20 @@ namespace SistemaEmpleos.Formularios
             lbFechaPostulacion3.Text = ofertas.Count > 2 ? ofertas[2].FechaPublicacion.ToString("dd/MM/yyyy") : "N/A";
             lbFechaPostulacion4.Text = ofertas.Count > 3 ? ofertas[3].FechaPublicacion.ToString("dd/MM/yyyy") : "N/A";
         }
+
+        private void lbNombreTrabajo_Click(object sender, EventArgs e)
+        {
+            Label label = sender as Label;
+            if (label != null && label.Tag != null)
+            {
+                int idOferta = (int)label.Tag;
+                MessageBox.Show($"ID de la oferta seleccionada: {idOferta}");
+
+                // Asegúrate de pasar idOferta al constructor de FormverPostulantes
+                new FormverPostulantes(idOferta).Show();
+            }
+        }
+
 
 
         private void VerOfertasEmpleoEmpresa_Load(object sender, EventArgs e)
