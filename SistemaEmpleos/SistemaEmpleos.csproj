@@ -58,6 +58,12 @@
     <Compile Include="Formularios\RegistroNormal.Designer.cs">
       <DependentUpon>RegistroNormal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\VerOfertasEmpleoEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\VerOfertasEmpleoEmpresa.Designer.cs">
+      <DependentUpon>VerOfertasEmpleoEmpresa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\verOfertasEmpleos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,7 +78,8 @@
     </Compile>
     <Compile Include="LogicaVerOfertasEmpleo\verOfertaEmpleoCRUD.cs" />
     <Compile Include="LogicaVerOfertasEmpleo\OfertaEmpleo.cs" />
-    <Compile Include="LogicaVerPostulante\VerPostulanteCRUD.cs" />
+    <Compile Include="LogicaVerOfertasEmpleoEmpresa\verOfertasEmpleoEmpresa.cs" />
+    <Compile Include="LogicaVerOfertasEmpleoEmpresa\verOfertasEmpleoEmpresaCrud.cs" />
     <Compile Include="ModuloConexion\Conexion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -81,6 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\RegistroNormal.resx">
       <DependentUpon>RegistroNormal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\VerOfertasEmpleoEmpresa.resx">
+      <DependentUpon>VerOfertasEmpleoEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\verOfertasEmpleos.resx">
       <DependentUpon>verOfertasEmpleos.cs</DependentUpon>
@@ -113,6 +123,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Clases\" />
+    <Folder Include="LogicaVerPostulante\" />
     <Folder Include="RecursosRodolfo\" />
     <Folder Include="Resources\" />
   </ItemGroup>

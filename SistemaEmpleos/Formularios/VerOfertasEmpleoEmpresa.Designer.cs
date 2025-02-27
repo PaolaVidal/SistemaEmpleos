@@ -1,6 +1,6 @@
 ﻿namespace SistemaEmpleos.Formularios
 {
-    partial class verPostulantes
+    partial class VerOfertasEmpleoEmpresa
     {
         /// <summary>
         /// Required designer variable.
@@ -28,69 +28,63 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.btnAnterior = new System.Windows.Forms.Button();
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.lbVerDetalles4 = new System.Windows.Forms.Label();
             this.lbFechaPostulacion4 = new System.Windows.Forms.Label();
-            this.lbNombrePostulante4 = new System.Windows.Forms.Label();
+            this.lbNombreTrabajo4 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.lbVerDetalles3 = new System.Windows.Forms.Label();
             this.lbFechaPostulacion3 = new System.Windows.Forms.Label();
-            this.lbNombrePostulante3 = new System.Windows.Forms.Label();
+            this.lbNombreTrabajo3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lbVerDetalles2 = new System.Windows.Forms.Label();
             this.lbFechaPostulacion2 = new System.Windows.Forms.Label();
-            this.lbNombrePostulante2 = new System.Windows.Forms.Label();
+            this.lbNombreTrabajo2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbVerDetalles = new System.Windows.Forms.Label();
             this.lbFechaPostulacion = new System.Windows.Forms.Label();
-            this.lbNombrePostulante = new System.Windows.Forms.Label();
+            this.lbNombreTrabajo = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel8.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.panel1.Location = new System.Drawing.Point(0, -1);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(70, 693);
-            this.panel1.TabIndex = 0;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(133, 22);
+            this.label2.Location = new System.Drawing.Point(140, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(149, 29);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Postulantes";
+            this.label2.Size = new System.Drawing.Size(280, 29);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "Mis Ofertas de Empleo";
             // 
             // btnAnterior
             // 
             this.btnAnterior.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnterior.Location = new System.Drawing.Point(1065, 613);
+            this.btnAnterior.Location = new System.Drawing.Point(1076, 600);
             this.btnAnterior.Name = "btnAnterior";
             this.btnAnterior.Size = new System.Drawing.Size(85, 39);
-            this.btnAnterior.TabIndex = 15;
+            this.btnAnterior.TabIndex = 23;
             this.btnAnterior.Text = "Anterior";
             this.btnAnterior.UseVisualStyleBackColor = true;
+            this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click);
             // 
             // btnSiguiente
             // 
             this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguiente.Location = new System.Drawing.Point(1156, 613);
+            this.btnSiguiente.Location = new System.Drawing.Point(1167, 600);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(85, 39);
-            this.btnSiguiente.TabIndex = 14;
+            this.btnSiguiente.TabIndex = 22;
             this.btnSiguiente.Text = "Siguiente";
             this.btnSiguiente.UseVisualStyleBackColor = true;
+            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
             // panel8
             // 
@@ -98,11 +92,11 @@
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.lbVerDetalles4);
             this.panel8.Controls.Add(this.lbFechaPostulacion4);
-            this.panel8.Controls.Add(this.lbNombrePostulante4);
-            this.panel8.Location = new System.Drawing.Point(134, 482);
+            this.panel8.Controls.Add(this.lbNombreTrabajo4);
+            this.panel8.Location = new System.Drawing.Point(145, 469);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1077, 100);
-            this.panel8.TabIndex = 13;
+            this.panel8.TabIndex = 21;
             // 
             // lbVerDetalles4
             // 
@@ -124,16 +118,15 @@
             this.lbFechaPostulacion4.TabIndex = 2;
             this.lbFechaPostulacion4.Text = "Fecha postulacion";
             // 
-            // lbNombrePostulante4
+            // lbNombreTrabajo4
             // 
-            this.lbNombrePostulante4.AutoSize = true;
-            this.lbNombrePostulante4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNombrePostulante4.Location = new System.Drawing.Point(29, 39);
-            this.lbNombrePostulante4.Name = "lbNombrePostulante4";
-            this.lbNombrePostulante4.Size = new System.Drawing.Size(188, 24);
-            this.lbNombrePostulante4.TabIndex = 1;
-            this.lbNombrePostulante4.Text = "Nombre Postulante";
-            this.lbNombrePostulante4.Click += new System.EventHandler(this.lbNombreTrabajo4_Click);
+            this.lbNombreTrabajo4.AutoSize = true;
+            this.lbNombreTrabajo4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNombreTrabajo4.Location = new System.Drawing.Point(29, 39);
+            this.lbNombreTrabajo4.Name = "lbNombreTrabajo4";
+            this.lbNombreTrabajo4.Size = new System.Drawing.Size(188, 24);
+            this.lbNombreTrabajo4.TabIndex = 1;
+            this.lbNombreTrabajo4.Text = "Nombre Postulante";
             // 
             // panel6
             // 
@@ -141,11 +134,11 @@
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.lbVerDetalles3);
             this.panel6.Controls.Add(this.lbFechaPostulacion3);
-            this.panel6.Controls.Add(this.lbNombrePostulante3);
-            this.panel6.Location = new System.Drawing.Point(134, 346);
+            this.panel6.Controls.Add(this.lbNombreTrabajo3);
+            this.panel6.Location = new System.Drawing.Point(145, 333);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1077, 100);
-            this.panel6.TabIndex = 11;
+            this.panel6.TabIndex = 19;
             // 
             // lbVerDetalles3
             // 
@@ -167,15 +160,15 @@
             this.lbFechaPostulacion3.TabIndex = 2;
             this.lbFechaPostulacion3.Text = "Fecha postulacion";
             // 
-            // lbNombrePostulante3
+            // lbNombreTrabajo3
             // 
-            this.lbNombrePostulante3.AutoSize = true;
-            this.lbNombrePostulante3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNombrePostulante3.Location = new System.Drawing.Point(29, 42);
-            this.lbNombrePostulante3.Name = "lbNombrePostulante3";
-            this.lbNombrePostulante3.Size = new System.Drawing.Size(188, 24);
-            this.lbNombrePostulante3.TabIndex = 1;
-            this.lbNombrePostulante3.Text = "Nombre Postulante";
+            this.lbNombreTrabajo3.AutoSize = true;
+            this.lbNombreTrabajo3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNombreTrabajo3.Location = new System.Drawing.Point(29, 42);
+            this.lbNombreTrabajo3.Name = "lbNombreTrabajo3";
+            this.lbNombreTrabajo3.Size = new System.Drawing.Size(188, 24);
+            this.lbNombreTrabajo3.TabIndex = 1;
+            this.lbNombreTrabajo3.Text = "Nombre Postulante";
             // 
             // panel4
             // 
@@ -183,11 +176,11 @@
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.lbVerDetalles2);
             this.panel4.Controls.Add(this.lbFechaPostulacion2);
-            this.panel4.Controls.Add(this.lbNombrePostulante2);
-            this.panel4.Location = new System.Drawing.Point(134, 210);
+            this.panel4.Controls.Add(this.lbNombreTrabajo2);
+            this.panel4.Location = new System.Drawing.Point(145, 197);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1077, 100);
-            this.panel4.TabIndex = 10;
+            this.panel4.TabIndex = 18;
             // 
             // lbVerDetalles2
             // 
@@ -209,15 +202,15 @@
             this.lbFechaPostulacion2.TabIndex = 2;
             this.lbFechaPostulacion2.Text = "Fecha postulacion";
             // 
-            // lbNombrePostulante2
+            // lbNombreTrabajo2
             // 
-            this.lbNombrePostulante2.AutoSize = true;
-            this.lbNombrePostulante2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNombrePostulante2.Location = new System.Drawing.Point(29, 36);
-            this.lbNombrePostulante2.Name = "lbNombrePostulante2";
-            this.lbNombrePostulante2.Size = new System.Drawing.Size(188, 24);
-            this.lbNombrePostulante2.TabIndex = 1;
-            this.lbNombrePostulante2.Text = "Nombre Postulante";
+            this.lbNombreTrabajo2.AutoSize = true;
+            this.lbNombreTrabajo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNombreTrabajo2.Location = new System.Drawing.Point(29, 36);
+            this.lbNombreTrabajo2.Name = "lbNombreTrabajo2";
+            this.lbNombreTrabajo2.Size = new System.Drawing.Size(188, 24);
+            this.lbNombreTrabajo2.TabIndex = 1;
+            this.lbNombreTrabajo2.Text = "Nombre Postulante";
             // 
             // panel2
             // 
@@ -225,11 +218,11 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.lbVerDetalles);
             this.panel2.Controls.Add(this.lbFechaPostulacion);
-            this.panel2.Controls.Add(this.lbNombrePostulante);
-            this.panel2.Location = new System.Drawing.Point(134, 78);
+            this.panel2.Controls.Add(this.lbNombreTrabajo);
+            this.panel2.Location = new System.Drawing.Point(145, 65);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1077, 100);
-            this.panel2.TabIndex = 9;
+            this.panel2.TabIndex = 17;
             // 
             // lbVerDetalles
             // 
@@ -251,17 +244,25 @@
             this.lbFechaPostulacion.TabIndex = 2;
             this.lbFechaPostulacion.Text = "Fecha postulacion";
             // 
-            // lbNombrePostulante
+            // lbNombreTrabajo
             // 
-            this.lbNombrePostulante.AutoSize = true;
-            this.lbNombrePostulante.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNombrePostulante.Location = new System.Drawing.Point(29, 40);
-            this.lbNombrePostulante.Name = "lbNombrePostulante";
-            this.lbNombrePostulante.Size = new System.Drawing.Size(188, 24);
-            this.lbNombrePostulante.TabIndex = 1;
-            this.lbNombrePostulante.Text = "Nombre Postulante";
+            this.lbNombreTrabajo.AutoSize = true;
+            this.lbNombreTrabajo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNombreTrabajo.Location = new System.Drawing.Point(29, 40);
+            this.lbNombreTrabajo.Name = "lbNombreTrabajo";
+            this.lbNombreTrabajo.Size = new System.Drawing.Size(188, 24);
+            this.lbNombreTrabajo.TabIndex = 1;
+            this.lbNombreTrabajo.Text = "Nombre Postulante";
             // 
-            // verPostulantes
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel1.Location = new System.Drawing.Point(11, -14);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(70, 693);
+            this.panel1.TabIndex = 16;
+            // 
+            // VerOfertasEmpleoEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -275,9 +276,9 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "verPostulantes";
-            this.Text = "verPostulantes";
-            this.Load += new System.EventHandler(this.verPostulantes_Load);
+            this.Name = "VerOfertasEmpleoEmpresa";
+            this.Text = "VerOfertasEmpleoEmpresa";
+            this.Load += new System.EventHandler(this.VerOfertasEmpleoEmpresa_Load);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -293,25 +294,25 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnAnterior;
         private System.Windows.Forms.Button btnSiguiente;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label lbVerDetalles4;
         private System.Windows.Forms.Label lbFechaPostulacion4;
-        private System.Windows.Forms.Label lbNombrePostulante4;
+        private System.Windows.Forms.Label lbNombreTrabajo4;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label lbVerDetalles3;
         private System.Windows.Forms.Label lbFechaPostulacion3;
-        private System.Windows.Forms.Label lbNombrePostulante3;
+        private System.Windows.Forms.Label lbNombreTrabajo3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lbVerDetalles2;
         private System.Windows.Forms.Label lbFechaPostulacion2;
-        private System.Windows.Forms.Label lbNombrePostulante2;
+        private System.Windows.Forms.Label lbNombreTrabajo2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lbVerDetalles;
         private System.Windows.Forms.Label lbFechaPostulacion;
-        private System.Windows.Forms.Label lbNombrePostulante;
+        private System.Windows.Forms.Label lbNombreTrabajo;
+        private System.Windows.Forms.Panel panel1;
     }
 }

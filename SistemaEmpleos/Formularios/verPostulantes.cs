@@ -13,7 +13,7 @@ namespace SistemaEmpleos.Formularios
 {
     public partial class verPostulantes : Form
     {
-        private VerPostulanteCRUD crud; // Instancia de VerPostulanteCRUD
+        private verOfertasEmpleoEmpresaCrud crud; // Instancia de VerPostulanteCRUD
 
         public verPostulantes()
         {
@@ -58,6 +58,11 @@ namespace SistemaEmpleos.Formularios
         private void txtDatoFiltrar_KeyPress(object sender, KeyPressEventArgs e)
         {
            
+        }
+
+        private void lbNombreTrabajo4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
