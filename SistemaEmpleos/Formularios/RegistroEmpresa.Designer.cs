@@ -50,6 +50,7 @@
 			this.label3 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
+			this.btnAnterior = new System.Windows.Forms.Button();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
 			this.SuspendLayout();
@@ -57,6 +58,7 @@
 			// panel1
 			// 
 			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(190)))), ((int)(((byte)(210)))));
+			this.panel1.Controls.Add(this.btnAnterior);
 			this.panel1.Controls.Add(this.panel2);
 			this.panel1.Location = new System.Drawing.Point(1, 1);
 			this.panel1.Name = "panel1";
@@ -306,6 +308,19 @@
 			this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			this.label1.Click += new System.EventHandler(this.label1_Click);
 			// 
+			// btnAnterior
+			// 
+			this.btnAnterior.BackgroundImage = global::SistemaEmpleos.Properties.Resources.Diseño_sin_título__4_;
+			this.btnAnterior.FlatAppearance.BorderSize = 0;
+			this.btnAnterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnAnterior.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnAnterior.Location = new System.Drawing.Point(1221, 11);
+			this.btnAnterior.Name = "btnAnterior";
+			this.btnAnterior.Size = new System.Drawing.Size(85, 40);
+			this.btnAnterior.TabIndex = 27;
+			this.btnAnterior.UseVisualStyleBackColor = true;
+			this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click);
+			// 
 			// RegistroEmpresa
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -345,5 +360,6 @@
 		private System.Windows.Forms.Label label10;
 		private System.Windows.Forms.Label label11;
 		private System.Windows.Forms.TextBox txtConfirmarContrasena;
+		private System.Windows.Forms.Button btnAnterior;
 	}
 }

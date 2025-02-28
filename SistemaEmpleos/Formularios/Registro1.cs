@@ -73,7 +73,7 @@ namespace SistemaEmpleos
 			}
 			else
 			{
-				MessageBox.Show("El correo no está registrado. Por favor, regístrate antes de iniciar sesión.");
+				MessageBox.Show("El correo es incorrecto o no está registrado. Por favor, regístrate antes de iniciar sesión.");
 			}
 		}
 

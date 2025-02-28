@@ -120,5 +120,13 @@ namespace SistemaEmpleos.Formularios
 		{
 
 		}
+
+		private void btnAnterior_Click(object sender, EventArgs e)
+		{
+			RegistroNormal formRegistroNormal = new RegistroNormal();
+			this.Close();
+			formRegistroNormal.Show();
+			
+		}
 	}
 }

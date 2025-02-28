@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.btnAnterior = new System.Windows.Forms.Button();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.txtConfirmarContrasena = new System.Windows.Forms.TextBox();
 			this.label10 = new System.Windows.Forms.Label();
@@ -55,6 +56,7 @@
 			// panel1
 			// 
 			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(190)))), ((int)(((byte)(210)))));
+			this.panel1.Controls.Add(this.btnAnterior);
 			this.panel1.Controls.Add(this.panel2);
 			this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
 			this.panel1.Location = new System.Drawing.Point(1, 0);
@@ -62,6 +64,19 @@
 			this.panel1.Size = new System.Drawing.Size(1319, 735);
 			this.panel1.TabIndex = 0;
 			this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+			// 
+			// btnAnterior
+			// 
+			this.btnAnterior.BackgroundImage = global::SistemaEmpleos.Properties.Resources.Diseño_sin_título__4_;
+			this.btnAnterior.FlatAppearance.BorderSize = 0;
+			this.btnAnterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnAnterior.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnAnterior.Location = new System.Drawing.Point(1221, 12);
+			this.btnAnterior.Name = "btnAnterior";
+			this.btnAnterior.Size = new System.Drawing.Size(85, 40);
+			this.btnAnterior.TabIndex = 26;
+			this.btnAnterior.UseVisualStyleBackColor = true;
+			this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click);
 			// 
 			// panel2
 			// 
@@ -326,5 +341,6 @@
 		private System.Windows.Forms.Label label9;
 		private System.Windows.Forms.TextBox txtConfirmarContrasena;
 		private System.Windows.Forms.Label label10;
+		private System.Windows.Forms.Button btnAnterior;
 	}
 }
