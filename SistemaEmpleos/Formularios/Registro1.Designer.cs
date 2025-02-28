@@ -177,7 +177,6 @@
 			this.Controls.Add(this.panel1);
 			this.Name = "Registro1";
 			this.Text = "Form1";
-			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.panel1.ResumeLayout(false);
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
