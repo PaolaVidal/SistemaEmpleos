@@ -44,19 +44,13 @@ namespace SistemaEmpleos.Formularios
 			formRegistro1.Show();
 			this.Close();
 		}
-	}
+
+
+		private void btnVerMisPostulaciones_Click(object sender, EventArgs e)
+		{
+			int id_usuario = Obj_Usuario.id_usuario;
+			verOfertasEmpleos verOfertasEmpleos = new verOfertasEmpleos(id_usuario);
 		}
 
-        
-		
-		
-		
-		
-		
-		private void btnVerMisPostulaciones_Click(object sender, EventArgs e)
-        {
-			int id_usuario = Obj_Usuario.id_usuario;
-            verOfertasEmpleos verOfertasEmpleos = new verOfertasEmpleos(id_usuario);
-        }
-    }
+	}
 }
