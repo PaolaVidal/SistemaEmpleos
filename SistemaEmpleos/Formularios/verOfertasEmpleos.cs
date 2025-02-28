@@ -15,13 +15,14 @@ namespace SistemaEmpleos.Formularios
     public partial class verOfertasEmpleos : Form
     {
         private verOfertaEmpleoCRUD crud; // Instancia de verOfertaEmpleoCRUD
-        private int idCandidato = 4; // ID del candidato (puede cambiarse dinámicamente)
+        private int idCandidato; // ID del candidato (puede cambiarse dinámicamente)
 
 
 
-        public verOfertasEmpleos()
+        public verOfertasEmpleos(int idCandidato)
         {
             InitializeComponent();
+            this.idCandidato = idCandidato; // Asignamos el ID del candidato
             // Instanciamos la conexión con los parámetros del servidor y base de datos
             crud = new verOfertaEmpleoCRUD(@"VALERIAV\MSSQLSERVER01", "Empleo3");
             //crud.VerificarConexion(); // Verificamos la conexión
