@@ -16,5 +16,25 @@ namespace SistemaEmpleos.Formularios
 		{
 			InitializeComponent();
 		}
+
+		private void FormHome_Load(object sender, EventArgs e)
+		{
+
+		}
+
+		private void panel2_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
+
+		private void panel3_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
+
+		private void panel4_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
 	}
 }

@@ -67,6 +67,7 @@
 			// panel2
 			// 
 			this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+			this.panel2.BackgroundImage = global::SistemaEmpleos.Properties.Resources.Sin_título__572_x_596_px___572_x_640_px_;
 			this.panel2.Controls.Add(this.txtConfirmarContrasena);
 			this.panel2.Controls.Add(this.label11);
 			this.panel2.Controls.Add(this.label10);

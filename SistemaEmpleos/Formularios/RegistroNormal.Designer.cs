@@ -66,6 +66,7 @@
 			// panel2
 			// 
 			this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
+			this.panel2.BackgroundImage = global::SistemaEmpleos.Properties.Resources.Sin_título__572_x_596_px___572_x_640_px_;
 			this.panel2.Controls.Add(this.txtConfirmarContrasena);
 			this.panel2.Controls.Add(this.label10);
 			this.panel2.Controls.Add(this.label9);
@@ -88,7 +89,7 @@
 			this.panel2.Location = new System.Drawing.Point(408, 50);
 			this.panel2.Margin = new System.Windows.Forms.Padding(10);
 			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(572, 639);
+			this.panel2.Size = new System.Drawing.Size(572, 640);
 			this.panel2.TabIndex = 1;
 			// 
 			// txtConfirmarContrasena
@@ -281,7 +282,7 @@
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(153)))), ((int)(((byte)(172)))));
-			this.label1.Location = new System.Drawing.Point(235, 33);
+			this.label1.Location = new System.Drawing.Point(212, 34);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(149, 31);
 			this.label1.TabIndex = 1;

@@ -175,11 +175,22 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\Sin título %28572 x 596 px%29 %28572 x 640 px%29.png" />
+    <None Include="Resources\Diseño sin título %283%291.png" />
+    <None Include="Resources\Sin título %28572 x 596 px%29.png" />
+    <None Include="Resources\Diseño sin título %283%29.png" />
+    <None Include="Resources\lupa.png" />
+    <None Include="Resources\lista.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\mas.png" />
+    <None Include="Resources\home.png" />
     <None Include="Resources\Agregar texto.png" />
     <None Include="Resources\Agregar texto %281%29.png" />
     <None Include="Resources\Agregar texto %281%291.png" />
     <None Include="Resources\Agregar texto %283%29.png" />
     <None Include="Resources\Agregar texto %283%291.png" />
+    <None Include="Resources\atras.png" />
+    <None Include="Resources\adelante.png" />
     <Content Include="Resources\Black and Blue Geometric Job Seeker Employment Logo %28518 x 438 px%29 %282%29.png" />
     <None Include="Resources\Diseño sin título %282%29.png" />
     <None Include="Resources\Black and Blue Geometric Job Seeker Employment Logo %28518 x 438 px%29 %282%291.png" />
