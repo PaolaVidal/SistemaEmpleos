@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SistemaEmpleos.LogicaVerPostulante;
 using SistemaEmpleos.LogicaVerPostulantes; // Importamos la clase
 
 namespace SistemaEmpleos.Formularios
@@ -25,6 +28,12 @@ namespace SistemaEmpleos.Formularios
             crud = new verPostulantesCRUD(@"(Localdb)\rodolfo server", "Empleo"); // Ejemplo de conexión
             crud.VerificarConexion(); // Verificar conexión
             CargarPostulantes();
+
+            
+            lbNombrePostulante.Click += lbNombrePostulante_Click;
+            lbNombrePostulante2.Click += lbNombrePostulante_Click;
+            lbNombrePostulante3.Click += lbNombrePostulante_Click;
+            lbNombrePostulante4.Click += lbNombrePostulante_Click;
         }
 
         private void CargarPostulantes()
@@ -97,6 +106,20 @@ namespace SistemaEmpleos.Formularios
         {
             var postulantes = crud.PaginaAnterior(idOferta); // Ir a la página anterior
             ActualizarInterfaz(postulantes);
+        }
+
+        private void lbNombrePostulante_Click(object sender, EventArgs e)
+        {
+            Form_Perfil_Postulante perfil = new Form_Perfil_Postulante();
+            this.Close();
+            perfil.Show();
+        }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            VerOfertasEmpleoEmpresa verOfertas = new VerOfertasEmpleoEmpresa();
+            this.Close();
+            verOfertas.Show();
         }
     }
 }

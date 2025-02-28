@@ -16,5 +16,10 @@ namespace SistemaEmpleos.Formularios
 		{
 			InitializeComponent();
 		}
-	}
+
+        private void Form_Perfil_Postulante_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
