@@ -1,4 +1,5 @@
-﻿using SistemaEmpleos.Negocio;
+﻿using SistemaEmpleos.Clases;
+using SistemaEmpleos.Negocio;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -289,7 +290,7 @@ namespace SistemaEmpleos.Formularios
                 {
                     contrato = GenerarContratoTiempo();
                     horario = GenerarHorario();
-                    Rsp = NOfertaEmpleo.Agregar(Convert.ToInt32(cboPais.SelectedValue),Convert.ToInt32(cboProvincia.SelectedValue),1,txtTitulo.Text.Trim(),txtDescripcion.Text.Trim(),Convert.ToInt32(nudVacantes.Value),Convert.ToDouble(nudSalario.Value),horario,contrato,DateTime.Now);
+                    Rsp = NOfertaEmpleo.Agregar(Convert.ToInt32(cboPais.SelectedValue),Convert.ToInt32(cboProvincia.SelectedValue), Obj_Usuario.id_empresa,txtTitulo.Text.Trim(),txtDescripcion.Text.Trim(),Convert.ToInt32(nudVacantes.Value),Convert.ToDouble(nudSalario.Value),horario,contrato,DateTime.Now);
                     GuardarCategoriasProfesionales();
                     if(Rsp == "OK")
                     {
