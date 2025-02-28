@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormverPostulantes));
 			this.label2 = new System.Windows.Forms.Label();
 			this.panel8 = new System.Windows.Forms.Panel();
 			this.btnRechazo4 = new System.Windows.Forms.Button();
@@ -45,8 +46,6 @@
 			this.lbNombrePostulante2 = new System.Windows.Forms.Label();
 			this.btnRevision2 = new System.Windows.Forms.Button();
 			this.panel2 = new System.Windows.Forms.Panel();
-			this.btnRechazo = new System.Windows.Forms.Button();
-			this.btnAprobado = new System.Windows.Forms.Button();
 			this.lbNombrePostulante = new System.Windows.Forms.Label();
 			this.btnAtras = new System.Windows.Forms.Button();
 			this.btnAnterior = new System.Windows.Forms.Button();
@@ -54,6 +53,8 @@
 			this.panel7 = new System.Windows.Forms.Panel();
 			this.panel5 = new System.Windows.Forms.Panel();
 			this.panel3 = new System.Windows.Forms.Panel();
+			this.btnRechazo = new System.Windows.Forms.Button();
+			this.btnAprobado = new System.Windows.Forms.Button();
 			this.btnRevision = new System.Windows.Forms.Button();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.panel8.SuspendLayout();
@@ -88,21 +89,25 @@
 			// 
 			// btnRechazo4
 			// 
+			this.btnRechazo4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRechazo4.BackgroundImage")));
+			this.btnRechazo4.FlatAppearance.BorderSize = 0;
+			this.btnRechazo4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnRechazo4.Location = new System.Drawing.Point(946, 33);
 			this.btnRechazo4.Name = "btnRechazo4";
 			this.btnRechazo4.Size = new System.Drawing.Size(61, 45);
 			this.btnRechazo4.TabIndex = 38;
-			this.btnRechazo4.Text = "Rechazado";
 			this.btnRechazo4.UseVisualStyleBackColor = true;
 			this.btnRechazo4.Click += new System.EventHandler(this.btnRechazo4_Click);
 			// 
 			// btnAprobado4
 			// 
+			this.btnAprobado4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAprobado4.BackgroundImage")));
+			this.btnAprobado4.FlatAppearance.BorderSize = 0;
+			this.btnAprobado4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnAprobado4.Location = new System.Drawing.Point(869, 33);
 			this.btnAprobado4.Name = "btnAprobado4";
 			this.btnAprobado4.Size = new System.Drawing.Size(61, 45);
 			this.btnAprobado4.TabIndex = 37;
-			this.btnAprobado4.Text = "Aprobado";
 			this.btnAprobado4.UseVisualStyleBackColor = true;
 			this.btnAprobado4.Click += new System.EventHandler(this.btnAprobado4_Click);
 			// 
@@ -119,11 +124,13 @@
 			// 
 			// btnRevision4
 			// 
+			this.btnRevision4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRevision4.BackgroundImage")));
+			this.btnRevision4.FlatAppearance.BorderSize = 0;
+			this.btnRevision4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnRevision4.Location = new System.Drawing.Point(791, 33);
 			this.btnRevision4.Name = "btnRevision4";
 			this.btnRevision4.Size = new System.Drawing.Size(61, 45);
 			this.btnRevision4.TabIndex = 36;
-			this.btnRevision4.Text = "Revision";
 			this.btnRevision4.UseVisualStyleBackColor = true;
 			this.btnRevision4.Click += new System.EventHandler(this.btnRevision4_Click);
 			// 
@@ -143,21 +150,25 @@
 			// 
 			// btnRechazo3
 			// 
+			this.btnRechazo3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRechazo3.BackgroundImage")));
+			this.btnRechazo3.FlatAppearance.BorderSize = 0;
+			this.btnRechazo3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnRechazo3.Location = new System.Drawing.Point(946, 32);
 			this.btnRechazo3.Name = "btnRechazo3";
 			this.btnRechazo3.Size = new System.Drawing.Size(61, 45);
 			this.btnRechazo3.TabIndex = 35;
-			this.btnRechazo3.Text = "Rechazado";
 			this.btnRechazo3.UseVisualStyleBackColor = true;
 			this.btnRechazo3.Click += new System.EventHandler(this.btnRechazo3_Click);
 			// 
 			// btnAprobado3
 			// 
+			this.btnAprobado3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAprobado3.BackgroundImage")));
+			this.btnAprobado3.FlatAppearance.BorderSize = 0;
+			this.btnAprobado3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnAprobado3.Location = new System.Drawing.Point(869, 32);
 			this.btnAprobado3.Name = "btnAprobado3";
 			this.btnAprobado3.Size = new System.Drawing.Size(61, 45);
 			this.btnAprobado3.TabIndex = 34;
-			this.btnAprobado3.Text = "Aprobado";
 			this.btnAprobado3.UseVisualStyleBackColor = true;
 			this.btnAprobado3.Click += new System.EventHandler(this.btnAprobado3_Click);
 			// 
@@ -173,11 +184,13 @@
 			// 
 			// btnRevision3
 			// 
+			this.btnRevision3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRevision3.BackgroundImage")));
+			this.btnRevision3.FlatAppearance.BorderSize = 0;
+			this.btnRevision3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnRevision3.Location = new System.Drawing.Point(791, 32);
 			this.btnRevision3.Name = "btnRevision3";
 			this.btnRevision3.Size = new System.Drawing.Size(61, 45);
 			this.btnRevision3.TabIndex = 33;
-			this.btnRevision3.Text = "Revision";
 			this.btnRevision3.UseVisualStyleBackColor = true;
 			this.btnRevision3.Click += new System.EventHandler(this.btnRevision3_Click);
 			// 
@@ -197,21 +210,25 @@
 			// 
 			// btnRechazo2
 			// 
+			this.btnRechazo2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRechazo2.BackgroundImage")));
+			this.btnRechazo2.FlatAppearance.BorderSize = 0;
+			this.btnRechazo2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnRechazo2.Location = new System.Drawing.Point(946, 35);
 			this.btnRechazo2.Name = "btnRechazo2";
 			this.btnRechazo2.Size = new System.Drawing.Size(61, 45);
 			this.btnRechazo2.TabIndex = 32;
-			this.btnRechazo2.Text = "Rechazado";
 			this.btnRechazo2.UseVisualStyleBackColor = true;
 			this.btnRechazo2.Click += new System.EventHandler(this.btnRechazo2_Click);
 			// 
 			// btnAprobado2
 			// 
+			this.btnAprobado2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAprobado2.BackgroundImage")));
+			this.btnAprobado2.FlatAppearance.BorderSize = 0;
+			this.btnAprobado2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnAprobado2.Location = new System.Drawing.Point(869, 35);
 			this.btnAprobado2.Name = "btnAprobado2";
 			this.btnAprobado2.Size = new System.Drawing.Size(61, 45);
 			this.btnAprobado2.TabIndex = 31;
-			this.btnAprobado2.Text = "Aprobado";
 			this.btnAprobado2.UseVisualStyleBackColor = true;
 			this.btnAprobado2.Click += new System.EventHandler(this.btnAprobado2_Click);
 			// 
@@ -227,11 +244,13 @@
 			// 
 			// btnRevision2
 			// 
+			this.btnRevision2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRevision2.BackgroundImage")));
+			this.btnRevision2.FlatAppearance.BorderSize = 0;
+			this.btnRevision2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnRevision2.Location = new System.Drawing.Point(791, 35);
 			this.btnRevision2.Name = "btnRevision2";
 			this.btnRevision2.Size = new System.Drawing.Size(61, 45);
 			this.btnRevision2.TabIndex = 30;
-			this.btnRevision2.Text = "Revision";
 			this.btnRevision2.UseVisualStyleBackColor = true;
 			this.btnRevision2.Click += new System.EventHandler(this.btnRevision2_Click);
 			// 
@@ -248,26 +267,6 @@
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(1077, 100);
 			this.panel2.TabIndex = 9;
-			// 
-			// btnRechazo
-			// 
-			this.btnRechazo.Location = new System.Drawing.Point(946, 37);
-			this.btnRechazo.Name = "btnRechazo";
-			this.btnRechazo.Size = new System.Drawing.Size(61, 45);
-			this.btnRechazo.TabIndex = 29;
-			this.btnRechazo.Text = "Rechazado";
-			this.btnRechazo.UseVisualStyleBackColor = true;
-			this.btnRechazo.Click += new System.EventHandler(this.btnRechazo_Click);
-			// 
-			// btnAprobado
-			// 
-			this.btnAprobado.Location = new System.Drawing.Point(869, 37);
-			this.btnAprobado.Name = "btnAprobado";
-			this.btnAprobado.Size = new System.Drawing.Size(61, 45);
-			this.btnAprobado.TabIndex = 28;
-			this.btnAprobado.Text = "Aprobado";
-			this.btnAprobado.UseVisualStyleBackColor = true;
-			this.btnAprobado.Click += new System.EventHandler(this.btnAprobado_Click);
 			// 
 			// lbNombrePostulante
 			// 
@@ -344,6 +343,30 @@
 			this.panel3.Name = "panel3";
 			this.panel3.Size = new System.Drawing.Size(87, 70);
 			this.panel3.TabIndex = 4;
+			// 
+			// btnRechazo
+			// 
+			this.btnRechazo.BackgroundImage = global::SistemaEmpleos.Properties.Resources._3;
+			this.btnRechazo.FlatAppearance.BorderSize = 0;
+			this.btnRechazo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnRechazo.Location = new System.Drawing.Point(946, 37);
+			this.btnRechazo.Name = "btnRechazo";
+			this.btnRechazo.Size = new System.Drawing.Size(61, 45);
+			this.btnRechazo.TabIndex = 29;
+			this.btnRechazo.UseVisualStyleBackColor = true;
+			this.btnRechazo.Click += new System.EventHandler(this.btnRechazo_Click);
+			// 
+			// btnAprobado
+			// 
+			this.btnAprobado.BackgroundImage = global::SistemaEmpleos.Properties.Resources._2;
+			this.btnAprobado.FlatAppearance.BorderSize = 0;
+			this.btnAprobado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnAprobado.Location = new System.Drawing.Point(869, 37);
+			this.btnAprobado.Name = "btnAprobado";
+			this.btnAprobado.Size = new System.Drawing.Size(61, 45);
+			this.btnAprobado.TabIndex = 28;
+			this.btnAprobado.UseVisualStyleBackColor = true;
+			this.btnAprobado.Click += new System.EventHandler(this.btnAprobado_Click);
 			// 
 			// btnRevision
 			// 
