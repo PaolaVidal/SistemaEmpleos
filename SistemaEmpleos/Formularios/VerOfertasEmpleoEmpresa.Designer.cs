@@ -32,23 +32,22 @@
             this.btnAnterior = new System.Windows.Forms.Button();
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.lbVerDetalles4 = new System.Windows.Forms.Label();
             this.lbFechaPostulacion4 = new System.Windows.Forms.Label();
             this.lbNombreTrabajo4 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.lbVerDetalles3 = new System.Windows.Forms.Label();
             this.lbFechaPostulacion3 = new System.Windows.Forms.Label();
             this.lbNombreTrabajo3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.lbVerDetalles2 = new System.Windows.Forms.Label();
             this.lbFechaPostulacion2 = new System.Windows.Forms.Label();
             this.lbNombreTrabajo2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lbVerDetalles = new System.Windows.Forms.Label();
             this.lbFechaPostulacion = new System.Windows.Forms.Label();
             this.lbNombreTrabajo = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnHome = new System.Windows.Forms.Button();
+            this.btnCrearOfertaEmpleo = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel8.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -92,23 +91,12 @@
             // 
             this.panel8.BackColor = System.Drawing.Color.AliceBlue;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Controls.Add(this.lbVerDetalles4);
             this.panel8.Controls.Add(this.lbFechaPostulacion4);
             this.panel8.Controls.Add(this.lbNombreTrabajo4);
             this.panel8.Location = new System.Drawing.Point(169, 521);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1077, 100);
             this.panel8.TabIndex = 21;
-            // 
-            // lbVerDetalles4
-            // 
-            this.lbVerDetalles4.AutoSize = true;
-            this.lbVerDetalles4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbVerDetalles4.Location = new System.Drawing.Point(975, 72);
-            this.lbVerDetalles4.Name = "lbVerDetalles4";
-            this.lbVerDetalles4.Size = new System.Drawing.Size(81, 16);
-            this.lbVerDetalles4.TabIndex = 3;
-            this.lbVerDetalles4.Text = "Ver Detalles";
             // 
             // lbFechaPostulacion4
             // 
@@ -123,6 +111,7 @@
             // lbNombreTrabajo4
             // 
             this.lbNombreTrabajo4.AutoSize = true;
+            this.lbNombreTrabajo4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbNombreTrabajo4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNombreTrabajo4.Location = new System.Drawing.Point(29, 39);
             this.lbNombreTrabajo4.Name = "lbNombreTrabajo4";
@@ -134,23 +123,12 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.AliceBlue;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.lbVerDetalles3);
             this.panel6.Controls.Add(this.lbFechaPostulacion3);
             this.panel6.Controls.Add(this.lbNombreTrabajo3);
             this.panel6.Location = new System.Drawing.Point(169, 385);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1077, 100);
             this.panel6.TabIndex = 19;
-            // 
-            // lbVerDetalles3
-            // 
-            this.lbVerDetalles3.AutoSize = true;
-            this.lbVerDetalles3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbVerDetalles3.Location = new System.Drawing.Point(975, 72);
-            this.lbVerDetalles3.Name = "lbVerDetalles3";
-            this.lbVerDetalles3.Size = new System.Drawing.Size(81, 16);
-            this.lbVerDetalles3.TabIndex = 3;
-            this.lbVerDetalles3.Text = "Ver Detalles";
             // 
             // lbFechaPostulacion3
             // 
@@ -165,6 +143,7 @@
             // lbNombreTrabajo3
             // 
             this.lbNombreTrabajo3.AutoSize = true;
+            this.lbNombreTrabajo3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbNombreTrabajo3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNombreTrabajo3.Location = new System.Drawing.Point(29, 42);
             this.lbNombreTrabajo3.Name = "lbNombreTrabajo3";
@@ -176,23 +155,12 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.AliceBlue;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.lbVerDetalles2);
             this.panel4.Controls.Add(this.lbFechaPostulacion2);
             this.panel4.Controls.Add(this.lbNombreTrabajo2);
             this.panel4.Location = new System.Drawing.Point(169, 249);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1077, 100);
             this.panel4.TabIndex = 18;
-            // 
-            // lbVerDetalles2
-            // 
-            this.lbVerDetalles2.AutoSize = true;
-            this.lbVerDetalles2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbVerDetalles2.Location = new System.Drawing.Point(975, 71);
-            this.lbVerDetalles2.Name = "lbVerDetalles2";
-            this.lbVerDetalles2.Size = new System.Drawing.Size(81, 16);
-            this.lbVerDetalles2.TabIndex = 3;
-            this.lbVerDetalles2.Text = "Ver Detalles";
             // 
             // lbFechaPostulacion2
             // 
@@ -207,6 +175,7 @@
             // lbNombreTrabajo2
             // 
             this.lbNombreTrabajo2.AutoSize = true;
+            this.lbNombreTrabajo2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbNombreTrabajo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNombreTrabajo2.Location = new System.Drawing.Point(29, 36);
             this.lbNombreTrabajo2.Name = "lbNombreTrabajo2";
@@ -218,23 +187,12 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.AliceBlue;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.lbVerDetalles);
             this.panel2.Controls.Add(this.lbFechaPostulacion);
             this.panel2.Controls.Add(this.lbNombreTrabajo);
             this.panel2.Location = new System.Drawing.Point(169, 117);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1077, 100);
             this.panel2.TabIndex = 17;
-            // 
-            // lbVerDetalles
-            // 
-            this.lbVerDetalles.AutoSize = true;
-            this.lbVerDetalles.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbVerDetalles.Location = new System.Drawing.Point(975, 68);
-            this.lbVerDetalles.Name = "lbVerDetalles";
-            this.lbVerDetalles.Size = new System.Drawing.Size(81, 16);
-            this.lbVerDetalles.TabIndex = 3;
-            this.lbVerDetalles.Text = "Ver Detalles";
             // 
             // lbFechaPostulacion
             // 
@@ -249,6 +207,7 @@
             // lbNombreTrabajo
             // 
             this.lbNombreTrabajo.AutoSize = true;
+            this.lbNombreTrabajo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbNombreTrabajo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNombreTrabajo.Location = new System.Drawing.Point(29, 40);
             this.lbNombreTrabajo.Name = "lbNombreTrabajo";
@@ -260,6 +219,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnCrearOfertaEmpleo);
             this.panel1.Controls.Add(this.btnHome);
             this.panel1.Location = new System.Drawing.Point(2, 2);
             this.panel1.Name = "panel1";
@@ -273,8 +234,38 @@
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(70, 51);
             this.btnHome.TabIndex = 2;
-            this.btnHome.Text = "Home";
+            this.btnHome.Text = "icono \"Casita\"";
             this.btnHome.UseVisualStyleBackColor = true;
+            // 
+            // btnCrearOfertaEmpleo
+            // 
+            this.btnCrearOfertaEmpleo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCrearOfertaEmpleo.Location = new System.Drawing.Point(10, 93);
+            this.btnCrearOfertaEmpleo.Name = "btnCrearOfertaEmpleo";
+            this.btnCrearOfertaEmpleo.Size = new System.Drawing.Size(70, 51);
+            this.btnCrearOfertaEmpleo.TabIndex = 3;
+            this.btnCrearOfertaEmpleo.Text = "icono \"Mas\"";
+            this.btnCrearOfertaEmpleo.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(166, 679);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(416, 20);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "Presiona el titulo de la oferta para ver mas detalles";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(10, 174);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(70, 51);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "icono \"perfil\"";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // VerOfertasEmpleoEmpresa
             // 
@@ -282,6 +273,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(1319, 732);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnAnterior);
@@ -313,22 +305,21 @@
         private System.Windows.Forms.Button btnAnterior;
         private System.Windows.Forms.Button btnSiguiente;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label lbVerDetalles4;
         private System.Windows.Forms.Label lbFechaPostulacion4;
         private System.Windows.Forms.Label lbNombreTrabajo4;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label lbVerDetalles3;
         private System.Windows.Forms.Label lbFechaPostulacion3;
         private System.Windows.Forms.Label lbNombreTrabajo3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label lbVerDetalles2;
         private System.Windows.Forms.Label lbFechaPostulacion2;
         private System.Windows.Forms.Label lbNombreTrabajo2;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label lbVerDetalles;
         private System.Windows.Forms.Label lbFechaPostulacion;
         private System.Windows.Forms.Label lbNombreTrabajo;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnHome;
+        private System.Windows.Forms.Button btnCrearOfertaEmpleo;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }

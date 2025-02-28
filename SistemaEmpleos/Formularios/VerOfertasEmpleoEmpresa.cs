@@ -15,8 +15,9 @@ namespace SistemaEmpleos.Formularios
     public partial class VerOfertasEmpleoEmpresa : Form
     {
         private verOfertasEmpleoEmpresaCrud crud; // Instancia de VerPostulanteCRUD
-        private int idEmpresa = 1; // ID de la empresa (puede cambiarse dinámicamente)
-        public VerOfertasEmpleoEmpresa()
+        private int idEmpresa; // Ahora este ID será dinámico
+
+        public VerOfertasEmpleoEmpresa(int idEmpresa)
         {
             InitializeComponent();
             crud = new verOfertasEmpleoEmpresaCrud(@"(Localdb)\rodolfo server", "Empleo");
@@ -32,7 +33,7 @@ namespace SistemaEmpleos.Formularios
 
         private void CargarOfertasEmpresa()
         {
-            var ofertas = crud.ObtenerOfertasPorEmpresa(idEmpresa, 0); // Obtener las ofertas de la empresa
+            var ofertas = crud.ObtenerOfertasPorEmpresa(idEmpresa, 0); // Obtener ofertas de esta empresa
             ActualizarInterfaz(ofertas);
         }
 
