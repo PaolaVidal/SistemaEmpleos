@@ -20,7 +20,7 @@ namespace SistemaEmpleos.Formularios
         {
             InitializeComponent();
             crud = new verOfertasEmpleoEmpresaCrud(@"(Localdb)\rodolfo server", "Empleo");
-            crud.VerificarConexion(); // Verificamos la conexión
+            //crud.VerificarConexion(); // Verificamos la conexión
             CargarOfertasEmpresa(); // Cargar las ofertas de la empresa al iniciar
 
             // Asignar eventos Click a los labels
@@ -65,10 +65,13 @@ namespace SistemaEmpleos.Formularios
             if (label != null && label.Tag != null)
             {
                 int idOferta = (int)label.Tag;
-                MessageBox.Show($"ID de la oferta seleccionada: {idOferta}");
+                //MessageBox.Show($"ID de la oferta seleccionada: {idOferta}");
 
                 // Asegúrate de pasar idOferta al constructor de FormverPostulantes
+                this.Hide();
                 new FormverPostulantes(idOferta).Show();
+                
+
             }
         }
 
@@ -89,6 +92,11 @@ namespace SistemaEmpleos.Formularios
         {
             var ofertas = crud.PaginaAnterior(idEmpresa); // Ir a la página anterior
             ActualizarInterfaz(ofertas);
+        }
+
+        private void lbNombreTrabajo_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

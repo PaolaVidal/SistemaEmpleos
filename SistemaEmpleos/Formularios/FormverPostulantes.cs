@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SistemaEmpleos.LogicaVerPostulante;
 using SistemaEmpleos.LogicaVerPostulantes; // Importamos la clase
 
 namespace SistemaEmpleos.Formularios
@@ -23,8 +26,14 @@ namespace SistemaEmpleos.Formularios
             InitializeComponent();
             this.idOferta = idOferta;
             crud = new verPostulantesCRUD(@"(Localdb)\rodolfo server", "Empleo"); // Ejemplo de conexión
-            crud.VerificarConexion(); // Verificar conexión
+            //crud.VerificarConexion(); // Verificar conexión
             CargarPostulantes();
+
+            
+            lbNombrePostulante.Click += lbNombrePostulante_Click;
+            lbNombrePostulante2.Click += lbNombrePostulante_Click;
+            lbNombrePostulante3.Click += lbNombrePostulante_Click;
+            lbNombrePostulante4.Click += lbNombrePostulante_Click;
         }
 
         private void CargarPostulantes()
@@ -41,6 +50,20 @@ namespace SistemaEmpleos.Formularios
             lbNombrePostulante4.Text = postulantes.Count > 3 ? postulantes[3].Nombre : "Sin postulante";
         }
 
+        private void MensajeRevision()
+        {
+            MessageBox.Show("El postulante ha sido enviado a revisión.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void MensajeRechazo()
+        {
+            MessageBox.Show("El postulante ha sido rechazado.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void MensajeAceptacion()
+        {
+            MessageBox.Show("El postulante ha sido aceptado.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -97,6 +120,80 @@ namespace SistemaEmpleos.Formularios
         {
             var postulantes = crud.PaginaAnterior(idOferta); // Ir a la página anterior
             ActualizarInterfaz(postulantes);
+        }
+
+        private void lbNombrePostulante_Click(object sender, EventArgs e)
+        {
+            FormVerPerfil verPerfil = new FormVerPerfil();
+            this.Close();
+            verPerfil.Show();
+        }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            VerOfertasEmpleoEmpresa verOfertas = new VerOfertasEmpleoEmpresa();
+            this.Close();
+            verOfertas.Show();
+        }
+
+        private void btnRevision_Click(object sender, EventArgs e)
+        {
+            this.MensajeRevision();
+        }
+
+        private void btnRevision2_Click(object sender, EventArgs e)
+        {
+            this.MensajeRevision();
+        }
+
+        private void btnRevision3_Click(object sender, EventArgs e)
+        {
+            this.MensajeRevision();
+        }
+
+        private void btnRevision4_Click(object sender, EventArgs e)
+        {
+            this.MensajeRevision();
+        }
+
+        private void btnAprobado_Click(object sender, EventArgs e)
+        {
+            this.MensajeAceptacion();
+        }
+
+        private void btnAprobado2_Click(object sender, EventArgs e)
+        {
+            this.MensajeAceptacion();
+        }
+
+        private void btnAprobado3_Click(object sender, EventArgs e)
+        {
+            this.MensajeAceptacion();
+        }
+
+        private void btnAprobado4_Click(object sender, EventArgs e)
+        {
+            this.MensajeAceptacion();
+        }
+
+        private void btnRechazo_Click(object sender, EventArgs e)
+        {
+            this.MensajeRechazo();
+        }
+
+        private void btnRechazo2_Click(object sender, EventArgs e)
+        {
+            this.MensajeRechazo();
+        }
+
+        private void btnRechazo3_Click(object sender, EventArgs e)
+        {
+            this.MensajeRechazo();
+        }
+
+        private void btnRechazo4_Click(object sender, EventArgs e)
+        {
+            this.MensajeRechazo();
         }
     }
 }

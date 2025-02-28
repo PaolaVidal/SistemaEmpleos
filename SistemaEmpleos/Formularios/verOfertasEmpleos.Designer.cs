@@ -29,29 +29,31 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnHome = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lbEstado = new System.Windows.Forms.Label();
             this.lbVerDetalles = new System.Windows.Forms.Label();
             this.lbFechaOferta = new System.Windows.Forms.Label();
             this.lbNombreTrabajo = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.lbEstado2 = new System.Windows.Forms.Label();
             this.lbVerDetalles2 = new System.Windows.Forms.Label();
             this.lbFechaOferta2 = new System.Windows.Forms.Label();
             this.lbNombreTrabajo2 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.lbEstado3 = new System.Windows.Forms.Label();
             this.lbVerDetalles3 = new System.Windows.Forms.Label();
             this.lbFechaOferta3 = new System.Windows.Forms.Label();
             this.lbNombreTrabajo3 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.lbEstado4 = new System.Windows.Forms.Label();
             this.lbVerDetalles4 = new System.Windows.Forms.Label();
             this.lbFechaOferta4 = new System.Windows.Forms.Label();
             this.lbNombreTrabajo4 = new System.Windows.Forms.Label();
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.btnAnterior = new System.Windows.Forms.Button();
-            this.lbEstado = new System.Windows.Forms.Label();
-            this.lbEstado2 = new System.Windows.Forms.Label();
-            this.lbEstado3 = new System.Windows.Forms.Label();
-            this.lbEstado4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -61,10 +63,21 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel1.Controls.Add(this.btnHome);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(92, 664);
+            this.panel1.Size = new System.Drawing.Size(92, 732);
             this.panel1.TabIndex = 0;
+            // 
+            // btnHome
+            // 
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.Location = new System.Drawing.Point(12, 12);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(70, 54);
+            this.btnHome.TabIndex = 1;
+            this.btnHome.Text = "Home";
+            this.btnHome.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -74,10 +87,20 @@
             this.panel2.Controls.Add(this.lbVerDetalles);
             this.panel2.Controls.Add(this.lbFechaOferta);
             this.panel2.Controls.Add(this.lbNombreTrabajo);
-            this.panel2.Location = new System.Drawing.Point(144, 78);
+            this.panel2.Location = new System.Drawing.Point(174, 109);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1077, 100);
             this.panel2.TabIndex = 1;
+            // 
+            // lbEstado
+            // 
+            this.lbEstado.AutoSize = true;
+            this.lbEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEstado.Location = new System.Drawing.Point(455, 46);
+            this.lbEstado.Name = "lbEstado";
+            this.lbEstado.Size = new System.Drawing.Size(44, 16);
+            this.lbEstado.TabIndex = 4;
+            this.lbEstado.Text = "label1";
             // 
             // lbVerDetalles
             // 
@@ -108,6 +131,7 @@
             this.lbNombreTrabajo.Size = new System.Drawing.Size(162, 24);
             this.lbNombreTrabajo.TabIndex = 1;
             this.lbNombreTrabajo.Text = "Nombre Trabajo";
+            this.lbNombreTrabajo.Click += new System.EventHandler(this.lbNombreTrabajo_Click);
             // 
             // panel4
             // 
@@ -117,10 +141,20 @@
             this.panel4.Controls.Add(this.lbVerDetalles2);
             this.panel4.Controls.Add(this.lbFechaOferta2);
             this.panel4.Controls.Add(this.lbNombreTrabajo2);
-            this.panel4.Location = new System.Drawing.Point(144, 210);
+            this.panel4.Location = new System.Drawing.Point(174, 241);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1077, 100);
             this.panel4.TabIndex = 4;
+            // 
+            // lbEstado2
+            // 
+            this.lbEstado2.AutoSize = true;
+            this.lbEstado2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEstado2.Location = new System.Drawing.Point(455, 47);
+            this.lbEstado2.Name = "lbEstado2";
+            this.lbEstado2.Size = new System.Drawing.Size(44, 16);
+            this.lbEstado2.TabIndex = 5;
+            this.lbEstado2.Text = "label2";
             // 
             // lbVerDetalles2
             // 
@@ -160,10 +194,20 @@
             this.panel6.Controls.Add(this.lbVerDetalles3);
             this.panel6.Controls.Add(this.lbFechaOferta3);
             this.panel6.Controls.Add(this.lbNombreTrabajo3);
-            this.panel6.Location = new System.Drawing.Point(144, 346);
+            this.panel6.Location = new System.Drawing.Point(174, 377);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1077, 100);
             this.panel6.TabIndex = 5;
+            // 
+            // lbEstado3
+            // 
+            this.lbEstado3.AutoSize = true;
+            this.lbEstado3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEstado3.Location = new System.Drawing.Point(455, 50);
+            this.lbEstado3.Name = "lbEstado3";
+            this.lbEstado3.Size = new System.Drawing.Size(44, 16);
+            this.lbEstado3.TabIndex = 6;
+            this.lbEstado3.Text = "label3";
             // 
             // lbVerDetalles3
             // 
@@ -204,10 +248,20 @@
             this.panel8.Controls.Add(this.lbVerDetalles4);
             this.panel8.Controls.Add(this.lbFechaOferta4);
             this.panel8.Controls.Add(this.lbNombreTrabajo4);
-            this.panel8.Location = new System.Drawing.Point(144, 482);
+            this.panel8.Location = new System.Drawing.Point(174, 513);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1077, 100);
             this.panel8.TabIndex = 6;
+            // 
+            // lbEstado4
+            // 
+            this.lbEstado4.AutoSize = true;
+            this.lbEstado4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEstado4.Location = new System.Drawing.Point(455, 50);
+            this.lbEstado4.Name = "lbEstado4";
+            this.lbEstado4.Size = new System.Drawing.Size(44, 16);
+            this.lbEstado4.TabIndex = 7;
+            this.lbEstado4.Text = "label4";
             // 
             // lbVerDetalles4
             // 
@@ -242,7 +296,7 @@
             // btnSiguiente
             // 
             this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguiente.Location = new System.Drawing.Point(1166, 613);
+            this.btnSiguiente.Location = new System.Drawing.Point(1167, 644);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(85, 39);
             this.btnSiguiente.TabIndex = 7;
@@ -253,7 +307,7 @@
             // btnAnterior
             // 
             this.btnAnterior.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnterior.Location = new System.Drawing.Point(1075, 613);
+            this.btnAnterior.Location = new System.Drawing.Point(1076, 644);
             this.btnAnterior.Name = "btnAnterior";
             this.btnAnterior.Size = new System.Drawing.Size(85, 39);
             this.btnAnterior.TabIndex = 8;
@@ -261,53 +315,13 @@
             this.btnAnterior.UseVisualStyleBackColor = true;
             this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click);
             // 
-            // lbEstado
-            // 
-            this.lbEstado.AutoSize = true;
-            this.lbEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEstado.Location = new System.Drawing.Point(455, 46);
-            this.lbEstado.Name = "lbEstado";
-            this.lbEstado.Size = new System.Drawing.Size(44, 16);
-            this.lbEstado.TabIndex = 4;
-            this.lbEstado.Text = "label1";
-            // 
-            // lbEstado2
-            // 
-            this.lbEstado2.AutoSize = true;
-            this.lbEstado2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEstado2.Location = new System.Drawing.Point(455, 47);
-            this.lbEstado2.Name = "lbEstado2";
-            this.lbEstado2.Size = new System.Drawing.Size(44, 16);
-            this.lbEstado2.TabIndex = 5;
-            this.lbEstado2.Text = "label2";
-            // 
-            // lbEstado3
-            // 
-            this.lbEstado3.AutoSize = true;
-            this.lbEstado3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEstado3.Location = new System.Drawing.Point(455, 50);
-            this.lbEstado3.Name = "lbEstado3";
-            this.lbEstado3.Size = new System.Drawing.Size(44, 16);
-            this.lbEstado3.TabIndex = 6;
-            this.lbEstado3.Text = "label3";
-            // 
-            // lbEstado4
-            // 
-            this.lbEstado4.AutoSize = true;
-            this.lbEstado4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEstado4.Location = new System.Drawing.Point(455, 50);
-            this.lbEstado4.Name = "lbEstado4";
-            this.lbEstado4.Size = new System.Drawing.Size(44, 16);
-            this.lbEstado4.TabIndex = 7;
-            this.lbEstado4.Text = "label4";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(143, 22);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(173, 53);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(275, 29);
+            this.label2.Size = new System.Drawing.Size(308, 31);
             this.label2.TabIndex = 6;
             this.label2.Text = "Mis ofertas postuladas";
             // 
@@ -316,7 +330,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.ClientSize = new System.Drawing.Size(1263, 664);
+            this.ClientSize = new System.Drawing.Size(1319, 732);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnAnterior);
             this.Controls.Add(this.btnSiguiente);
@@ -328,6 +342,7 @@
             this.Name = "verOfertasEmpleos";
             this.Text = "verOfertasEmpleos";
             this.Load += new System.EventHandler(this.verOfertasEmpleos_Load);
+            this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -367,5 +382,6 @@
         private System.Windows.Forms.Label lbEstado3;
         private System.Windows.Forms.Label lbEstado4;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnHome;
     }
 }

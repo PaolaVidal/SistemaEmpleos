@@ -47,11 +47,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Obj_Usuario.cs" />
-    <Compile Include="Formularios\FormHome.cs">
+    <Compile Include="Formularios\FormHomeEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FormHome.Designer.cs">
-      <DependentUpon>FormHome.cs</DependentUpon>
+    <Compile Include="Formularios\FormHomeEmpresa.Designer.cs">
+      <DependentUpon>FormHomeEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormVerPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormVerPerfil.Designer.cs">
+      <DependentUpon>FormVerPerfil.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Form_Perfil_Empresa.cs">
       <SubType>Form</SubType>
@@ -113,8 +119,11 @@
     <Compile Include="ModuloUsuario\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formularios\FormHome.resx">
-      <DependentUpon>FormHome.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\FormHomeEmpresa.resx">
+      <DependentUpon>FormHomeEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormVerPerfil.resx">
+      <DependentUpon>FormVerPerfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Form_Perfil_Empresa.resx">
       <DependentUpon>Form_Perfil_Empresa.cs</DependentUpon>

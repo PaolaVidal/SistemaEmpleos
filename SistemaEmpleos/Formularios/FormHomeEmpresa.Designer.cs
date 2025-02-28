@@ -1,6 +1,6 @@
 ﻿namespace SistemaEmpleos.Formularios
 {
-	partial class FormHome
+	partial class FormHomeEmpresa
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -28,19 +28,19 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.SuspendLayout();
-			// 
-			// FormHome
-			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1319, 732);
-			this.Name = "FormHome";
-			this.Text = "FormHome";
-			this.ResumeLayout(false);
+            this.SuspendLayout();
+            // 
+            // FormHome
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1319, 732);
+            this.Name = "FormHome";
+            this.Text = "FormHome";
+            this.ResumeLayout(false);
 
 		}
 
-		#endregion
-	}
+        #endregion
+    }
 }
