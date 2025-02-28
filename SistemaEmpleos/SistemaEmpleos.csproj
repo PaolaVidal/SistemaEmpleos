@@ -166,6 +166,11 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\Agregar texto.png" />
+    <None Include="Resources\Agregar texto %281%29.png" />
+    <None Include="Resources\Agregar texto %281%291.png" />
+    <None Include="Resources\Agregar texto %283%29.png" />
+    <None Include="Resources\Agregar texto %283%291.png" />
     <Content Include="Resources\Black and Blue Geometric Job Seeker Employment Logo %28518 x 438 px%29 %282%29.png" />
     <None Include="Resources\Diseño sin título %282%29.png" />
     <None Include="Resources\Black and Blue Geometric Job Seeker Employment Logo %28518 x 438 px%29 %282%291.png" />

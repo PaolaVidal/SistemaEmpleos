@@ -63,6 +63,56 @@ namespace SistemaEmpleos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Agregar_texto {
+            get {
+                object obj = ResourceManager.GetObject("Agregar texto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Agregar_texto__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Agregar texto (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Agregar_texto__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("Agregar texto (1)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Agregar_texto__3_ {
+            get {
+                object obj = ResourceManager.GetObject("Agregar texto (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Agregar_texto__3_1 {
+            get {
+                object obj = ResourceManager.GetObject("Agregar texto (3)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Black_and_Blue_Geometric_Job_Seeker_Employment_Logo__518_x_438_px___2_ {
             get {
                 object obj = ResourceManager.GetObject("Black and Blue Geometric Job Seeker Employment Logo (518 x 438 px) (2)", resourceCulture);

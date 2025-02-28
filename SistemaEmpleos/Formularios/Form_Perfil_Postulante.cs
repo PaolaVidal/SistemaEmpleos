@@ -15,6 +15,25 @@ namespace SistemaEmpleos.Formularios
 		public Form_Perfil_Postulante()
 		{
 			InitializeComponent();
+			
+		}
+
+		private void button2_Click(object sender, EventArgs e)
+		{
+			
+		}
+
+		private void atras_Click(object sender, EventArgs e)
+		{
+			FormHome homePostulante = new FormHome(); 
+			homePostulante.Show(); 
+			this.Hide(); 
+
+		}
+
+		private void Form_Perfil_Postulante_Load(object sender, EventArgs e)
+		{
+
 		}
 	}
 }
