@@ -175,6 +175,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\Diseño sin título %289%29.png" />
     <None Include="Resources\Diseño sin título %284%29.png" />
     <None Include="Resources\Sin título %28572 x 596 px%29 %28572 x 640 px%29.png" />
     <None Include="Resources\Diseño sin título %283%291.png" />
