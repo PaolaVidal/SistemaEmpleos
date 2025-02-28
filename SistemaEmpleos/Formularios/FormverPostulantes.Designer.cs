@@ -32,22 +32,30 @@
             this.btnAnterior = new System.Windows.Forms.Button();
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.lbFechaPostulacion4 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.lbNombrePostulante4 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.lbFechaPostulacion3 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.lbNombrePostulante3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.lbFechaPostulacion2 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.lbNombrePostulante2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lbFechaPostulacion = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.lbNombrePostulante = new System.Windows.Forms.Label();
             this.btnAtras = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
+            this.btnRevision = new System.Windows.Forms.Button();
+            this.btnAprobado = new System.Windows.Forms.Button();
+            this.btnRechazo = new System.Windows.Forms.Button();
+            this.btnRechazo2 = new System.Windows.Forms.Button();
+            this.btnAprobado2 = new System.Windows.Forms.Button();
+            this.btnRevision2 = new System.Windows.Forms.Button();
+            this.btnRechazo3 = new System.Windows.Forms.Button();
+            this.btnAprobado3 = new System.Windows.Forms.Button();
+            this.btnRevision3 = new System.Windows.Forms.Button();
+            this.btnRechazo4 = new System.Windows.Forms.Button();
+            this.btnAprobado4 = new System.Windows.Forms.Button();
+            this.btnRevision4 = new System.Windows.Forms.Button();
             this.panel8.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -90,23 +98,22 @@
             // 
             this.panel8.BackColor = System.Drawing.Color.AliceBlue;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.Controls.Add(this.btnRechazo4);
             this.panel8.Controls.Add(this.panel7);
-            this.panel8.Controls.Add(this.lbFechaPostulacion4);
+            this.panel8.Controls.Add(this.btnAprobado4);
             this.panel8.Controls.Add(this.lbNombrePostulante4);
+            this.panel8.Controls.Add(this.btnRevision4);
             this.panel8.Location = new System.Drawing.Point(115, 509);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1077, 100);
             this.panel8.TabIndex = 13;
             // 
-            // lbFechaPostulacion4
+            // panel7
             // 
-            this.lbFechaPostulacion4.AutoSize = true;
-            this.lbFechaPostulacion4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFechaPostulacion4.Location = new System.Drawing.Point(955, 15);
-            this.lbFechaPostulacion4.Name = "lbFechaPostulacion4";
-            this.lbFechaPostulacion4.Size = new System.Drawing.Size(139, 20);
-            this.lbFechaPostulacion4.TabIndex = 2;
-            this.lbFechaPostulacion4.Text = "Fecha postulacion";
+            this.panel7.Location = new System.Drawing.Point(17, 15);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(87, 70);
+            this.panel7.TabIndex = 4;
             // 
             // lbNombrePostulante4
             // 
@@ -123,23 +130,22 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.AliceBlue;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.btnRechazo3);
             this.panel6.Controls.Add(this.panel5);
-            this.panel6.Controls.Add(this.lbFechaPostulacion3);
+            this.panel6.Controls.Add(this.btnAprobado3);
             this.panel6.Controls.Add(this.lbNombrePostulante3);
+            this.panel6.Controls.Add(this.btnRevision3);
             this.panel6.Location = new System.Drawing.Point(115, 373);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1077, 100);
             this.panel6.TabIndex = 11;
             // 
-            // lbFechaPostulacion3
+            // panel5
             // 
-            this.lbFechaPostulacion3.AutoSize = true;
-            this.lbFechaPostulacion3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFechaPostulacion3.Location = new System.Drawing.Point(955, 18);
-            this.lbFechaPostulacion3.Name = "lbFechaPostulacion3";
-            this.lbFechaPostulacion3.Size = new System.Drawing.Size(139, 20);
-            this.lbFechaPostulacion3.TabIndex = 2;
-            this.lbFechaPostulacion3.Text = "Fecha postulacion";
+            this.panel5.Location = new System.Drawing.Point(17, 18);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(87, 70);
+            this.panel5.TabIndex = 4;
             // 
             // lbNombrePostulante3
             // 
@@ -155,23 +161,22 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.AliceBlue;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.btnRechazo2);
             this.panel4.Controls.Add(this.panel3);
-            this.panel4.Controls.Add(this.lbFechaPostulacion2);
+            this.panel4.Controls.Add(this.btnAprobado2);
             this.panel4.Controls.Add(this.lbNombrePostulante2);
+            this.panel4.Controls.Add(this.btnRevision2);
             this.panel4.Location = new System.Drawing.Point(115, 237);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1077, 100);
             this.panel4.TabIndex = 10;
             // 
-            // lbFechaPostulacion2
+            // panel3
             // 
-            this.lbFechaPostulacion2.AutoSize = true;
-            this.lbFechaPostulacion2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFechaPostulacion2.Location = new System.Drawing.Point(955, 14);
-            this.lbFechaPostulacion2.Name = "lbFechaPostulacion2";
-            this.lbFechaPostulacion2.Size = new System.Drawing.Size(139, 20);
-            this.lbFechaPostulacion2.TabIndex = 2;
-            this.lbFechaPostulacion2.Text = "Fecha postulacion";
+            this.panel3.Location = new System.Drawing.Point(17, 14);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(87, 70);
+            this.panel3.TabIndex = 4;
             // 
             // lbNombrePostulante2
             // 
@@ -187,23 +192,22 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.AliceBlue;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.btnRechazo);
+            this.panel2.Controls.Add(this.btnAprobado);
+            this.panel2.Controls.Add(this.btnRevision);
             this.panel2.Controls.Add(this.panel1);
-            this.panel2.Controls.Add(this.lbFechaPostulacion);
             this.panel2.Controls.Add(this.lbNombrePostulante);
             this.panel2.Location = new System.Drawing.Point(115, 105);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1077, 100);
             this.panel2.TabIndex = 9;
             // 
-            // lbFechaPostulacion
+            // panel1
             // 
-            this.lbFechaPostulacion.AutoSize = true;
-            this.lbFechaPostulacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFechaPostulacion.Location = new System.Drawing.Point(955, 12);
-            this.lbFechaPostulacion.Name = "lbFechaPostulacion";
-            this.lbFechaPostulacion.Size = new System.Drawing.Size(139, 20);
-            this.lbFechaPostulacion.TabIndex = 2;
-            this.lbFechaPostulacion.Text = "Fecha postulacion";
+            this.panel1.Location = new System.Drawing.Point(17, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(87, 70);
+            this.panel1.TabIndex = 3;
             // 
             // lbNombrePostulante
             // 
@@ -227,33 +231,125 @@
             this.btnAtras.UseVisualStyleBackColor = true;
             this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
             // 
-            // panel1
+            // btnRevision
             // 
-            this.panel1.Location = new System.Drawing.Point(17, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(87, 70);
-            this.panel1.TabIndex = 3;
+            this.btnRevision.Location = new System.Drawing.Point(791, 37);
+            this.btnRevision.Name = "btnRevision";
+            this.btnRevision.Size = new System.Drawing.Size(61, 35);
+            this.btnRevision.TabIndex = 27;
+            this.btnRevision.Text = "Revision";
+            this.btnRevision.UseVisualStyleBackColor = true;
+            this.btnRevision.Click += new System.EventHandler(this.btnRevision_Click);
             // 
-            // panel3
+            // btnAprobado
             // 
-            this.panel3.Location = new System.Drawing.Point(17, 14);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(87, 70);
-            this.panel3.TabIndex = 4;
+            this.btnAprobado.Location = new System.Drawing.Point(869, 37);
+            this.btnAprobado.Name = "btnAprobado";
+            this.btnAprobado.Size = new System.Drawing.Size(62, 35);
+            this.btnAprobado.TabIndex = 28;
+            this.btnAprobado.Text = "Aprobado";
+            this.btnAprobado.UseVisualStyleBackColor = true;
+            this.btnAprobado.Click += new System.EventHandler(this.btnAprobado_Click);
             // 
-            // panel5
+            // btnRechazo
             // 
-            this.panel5.Location = new System.Drawing.Point(17, 18);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(87, 70);
-            this.panel5.TabIndex = 4;
+            this.btnRechazo.Location = new System.Drawing.Point(946, 37);
+            this.btnRechazo.Name = "btnRechazo";
+            this.btnRechazo.Size = new System.Drawing.Size(71, 35);
+            this.btnRechazo.TabIndex = 29;
+            this.btnRechazo.Text = "Rechazado";
+            this.btnRechazo.UseVisualStyleBackColor = true;
+            this.btnRechazo.Click += new System.EventHandler(this.btnRechazo_Click);
             // 
-            // panel7
+            // btnRechazo2
             // 
-            this.panel7.Location = new System.Drawing.Point(17, 15);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(87, 70);
-            this.panel7.TabIndex = 4;
+            this.btnRechazo2.Location = new System.Drawing.Point(946, 35);
+            this.btnRechazo2.Name = "btnRechazo2";
+            this.btnRechazo2.Size = new System.Drawing.Size(71, 35);
+            this.btnRechazo2.TabIndex = 32;
+            this.btnRechazo2.Text = "Rechazado";
+            this.btnRechazo2.UseVisualStyleBackColor = true;
+            this.btnRechazo2.Click += new System.EventHandler(this.btnRechazo2_Click);
+            // 
+            // btnAprobado2
+            // 
+            this.btnAprobado2.Location = new System.Drawing.Point(869, 35);
+            this.btnAprobado2.Name = "btnAprobado2";
+            this.btnAprobado2.Size = new System.Drawing.Size(62, 35);
+            this.btnAprobado2.TabIndex = 31;
+            this.btnAprobado2.Text = "Aprobado";
+            this.btnAprobado2.UseVisualStyleBackColor = true;
+            this.btnAprobado2.Click += new System.EventHandler(this.btnAprobado2_Click);
+            // 
+            // btnRevision2
+            // 
+            this.btnRevision2.Location = new System.Drawing.Point(791, 35);
+            this.btnRevision2.Name = "btnRevision2";
+            this.btnRevision2.Size = new System.Drawing.Size(61, 35);
+            this.btnRevision2.TabIndex = 30;
+            this.btnRevision2.Text = "Revision";
+            this.btnRevision2.UseVisualStyleBackColor = true;
+            this.btnRevision2.Click += new System.EventHandler(this.btnRevision2_Click);
+            // 
+            // btnRechazo3
+            // 
+            this.btnRechazo3.Location = new System.Drawing.Point(946, 32);
+            this.btnRechazo3.Name = "btnRechazo3";
+            this.btnRechazo3.Size = new System.Drawing.Size(71, 35);
+            this.btnRechazo3.TabIndex = 35;
+            this.btnRechazo3.Text = "Rechazado";
+            this.btnRechazo3.UseVisualStyleBackColor = true;
+            this.btnRechazo3.Click += new System.EventHandler(this.btnRechazo3_Click);
+            // 
+            // btnAprobado3
+            // 
+            this.btnAprobado3.Location = new System.Drawing.Point(869, 32);
+            this.btnAprobado3.Name = "btnAprobado3";
+            this.btnAprobado3.Size = new System.Drawing.Size(62, 35);
+            this.btnAprobado3.TabIndex = 34;
+            this.btnAprobado3.Text = "Aprobado";
+            this.btnAprobado3.UseVisualStyleBackColor = true;
+            this.btnAprobado3.Click += new System.EventHandler(this.btnAprobado3_Click);
+            // 
+            // btnRevision3
+            // 
+            this.btnRevision3.Location = new System.Drawing.Point(791, 32);
+            this.btnRevision3.Name = "btnRevision3";
+            this.btnRevision3.Size = new System.Drawing.Size(61, 35);
+            this.btnRevision3.TabIndex = 33;
+            this.btnRevision3.Text = "Revision";
+            this.btnRevision3.UseVisualStyleBackColor = true;
+            this.btnRevision3.Click += new System.EventHandler(this.btnRevision3_Click);
+            // 
+            // btnRechazo4
+            // 
+            this.btnRechazo4.Location = new System.Drawing.Point(946, 33);
+            this.btnRechazo4.Name = "btnRechazo4";
+            this.btnRechazo4.Size = new System.Drawing.Size(71, 35);
+            this.btnRechazo4.TabIndex = 38;
+            this.btnRechazo4.Text = "Rechazado";
+            this.btnRechazo4.UseVisualStyleBackColor = true;
+            this.btnRechazo4.Click += new System.EventHandler(this.btnRechazo4_Click);
+            // 
+            // btnAprobado4
+            // 
+            this.btnAprobado4.Location = new System.Drawing.Point(869, 33);
+            this.btnAprobado4.Name = "btnAprobado4";
+            this.btnAprobado4.Size = new System.Drawing.Size(62, 35);
+            this.btnAprobado4.TabIndex = 37;
+            this.btnAprobado4.Text = "Aprobado";
+            this.btnAprobado4.UseVisualStyleBackColor = true;
+            this.btnAprobado4.Click += new System.EventHandler(this.btnAprobado4_Click);
+            // 
+            // btnRevision4
+            // 
+            this.btnRevision4.Location = new System.Drawing.Point(791, 33);
+            this.btnRevision4.Name = "btnRevision4";
+            this.btnRevision4.Size = new System.Drawing.Size(61, 35);
+            this.btnRevision4.TabIndex = 36;
+            this.btnRevision4.Text = "Revision";
+            this.btnRevision4.UseVisualStyleBackColor = true;
+            this.btnRevision4.Click += new System.EventHandler(this.btnRevision4_Click);
             // 
             // FormverPostulantes
             // 
@@ -290,21 +386,29 @@
         private System.Windows.Forms.Button btnAnterior;
         private System.Windows.Forms.Button btnSiguiente;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label lbFechaPostulacion4;
         private System.Windows.Forms.Label lbNombrePostulante4;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label lbFechaPostulacion3;
         private System.Windows.Forms.Label lbNombrePostulante3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label lbFechaPostulacion2;
         private System.Windows.Forms.Label lbNombrePostulante2;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label lbFechaPostulacion;
         private System.Windows.Forms.Label lbNombrePostulante;
         private System.Windows.Forms.Button btnAtras;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnRevision;
+        private System.Windows.Forms.Button btnRechazo4;
+        private System.Windows.Forms.Button btnAprobado4;
+        private System.Windows.Forms.Button btnRevision4;
+        private System.Windows.Forms.Button btnRechazo3;
+        private System.Windows.Forms.Button btnAprobado3;
+        private System.Windows.Forms.Button btnRevision3;
+        private System.Windows.Forms.Button btnRechazo2;
+        private System.Windows.Forms.Button btnAprobado2;
+        private System.Windows.Forms.Button btnRevision2;
+        private System.Windows.Forms.Button btnRechazo;
+        private System.Windows.Forms.Button btnAprobado;
     }
 }

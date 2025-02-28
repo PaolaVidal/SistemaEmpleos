@@ -53,6 +53,12 @@
     <Compile Include="Formularios\FormHome.Designer.cs">
       <DependentUpon>FormHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FormVerPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormVerPerfil.Designer.cs">
+      <DependentUpon>FormVerPerfil.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Form_Perfil_Empresa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\FormHome.resx">
       <DependentUpon>FormHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormVerPerfil.resx">
+      <DependentUpon>FormVerPerfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Form_Perfil_Empresa.resx">
       <DependentUpon>Form_Perfil_Empresa.cs</DependentUpon>
