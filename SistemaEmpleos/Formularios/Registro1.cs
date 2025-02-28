@@ -85,9 +85,10 @@ namespace SistemaEmpleos
 					}
 					else if (user.Tipo_usuario == "E")
 					{
-						Form_Perfil_Empresa formEmpresa = new Form_Perfil_Empresa();
-						formEmpresa.Show();
-					}
+						Obj_Usuario.id_empresa = user.Id_usuario;
+                        VerOfertasEmpleoEmpresa formEmpresa = new VerOfertasEmpleoEmpresa(user.Id_usuario);
+                        formEmpresa.Show();
+                    }
 					else
 					{
 						MessageBox.Show("Tipo de usuario no reconocido.");
@@ -124,5 +125,10 @@ namespace SistemaEmpleos
 		{
 
 		}
-	}
+
+        private void Registro1_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
