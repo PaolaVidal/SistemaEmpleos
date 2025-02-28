@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemaEmpleos.Clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -44,9 +45,12 @@ namespace SistemaEmpleos.Formularios
 			this.Close();
 		}
 
-		private void button2_Click(object sender, EventArgs e)
-		{
 
+		private void btnVerMisPostulaciones_Click(object sender, EventArgs e)
+		{
+			int id_usuario = Obj_Usuario.id_usuario;
+			verOfertasEmpleos verOfertasEmpleos = new verOfertasEmpleos(id_usuario);
 		}
+
 	}
 }
