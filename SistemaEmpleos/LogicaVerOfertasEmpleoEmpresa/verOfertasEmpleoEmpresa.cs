@@ -6,32 +6,33 @@ using System.Threading.Tasks;
 
 namespace SistemaEmpleos.LogicaVerPostulante
 {
-    internal class OfertaEmpleo
+    internal class verOfertasEmpleoEmpresa
     {
         public int Id { get; set; }
         public string Titulo { get; set; }
         public DateTime FechaPublicacion { get; set; }
         public string Estado { get; set; }
-        public DateTime FechaPostulacion { get; set; }
+        public int IdEmpresa { get; set; }  // Agregado para identificar a la empresa que publicó la oferta
 
         // Constructor sin parámetros para compatibilidad con ORMs y serialización
-        public OfertaEmpleo() { }
+        public verOfertasEmpleoEmpresa() { }
 
-        public OfertaEmpleo(int id, string titulo, DateTime fechaPublicacion, string estado, DateTime fechaPostulacion)
+        // Constructor actualizado
+        public verOfertasEmpleoEmpresa(int id, string titulo, DateTime fechaPublicacion, string estado, int idEmpresa)
         {
             Id = id;
             Titulo = titulo;
             FechaPublicacion = fechaPublicacion;
             Estado = estado;
-            FechaPostulacion = fechaPostulacion;
+            IdEmpresa = idEmpresa;  // Inicializamos el Id de la empresa
         }
 
-        public void ActualizarDatos(string titulo, DateTime fechaPublicacion, string estado, DateTime fechaPostulacion)
+        public void ActualizarDatos(string titulo, DateTime fechaPublicacion, string estado, int idEmpresa)
         {
             Titulo = titulo;
             FechaPublicacion = fechaPublicacion;
             Estado = estado;
-            FechaPostulacion = fechaPostulacion;
+            IdEmpresa = idEmpresa;  // Actualizamos el Id de la empresa
         }
 
         // Método que convierte el estado en una cadena más entendible
@@ -52,7 +53,7 @@ namespace SistemaEmpleos.LogicaVerPostulante
 
         public override string ToString()
         {
-            return $"{Titulo} - Publicado el: {FechaPublicacion.ToShortDateString()} - Estado: {Estado} - Postulado el: {FechaPostulacion.ToShortDateString()}";
+            return $"{Titulo} - Publicado el: {FechaPublicacion.ToShortDateString()} - Estado: {ObtenerEstadoAmigable()} - Empresa ID: {IdEmpresa}";
         }
     }
 }

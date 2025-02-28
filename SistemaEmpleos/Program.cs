@@ -9,6 +9,8 @@ namespace SistemaEmpleos
 {
 	internal static class Program
 	{
+
+
 		/// <summary>
 		/// Punto de entrada principal para la aplicación.
 		/// </summary>
@@ -19,9 +21,18 @@ namespace SistemaEmpleos
             
             Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-            verPostulantes verPostulantes = new verPostulantes();
 			verOfertasEmpleos verOfertasEmpleos = new verOfertasEmpleos();
-            Application.Run(new verOfertasEmpleos());
+			//VerOfertasEmpleoEmpresa verOfertasEmpleoEmpresa = new VerOfertasEmpleoEmpresa();
+			//Application.Run(new VerOfertasEmpleoEmpresa());
+
+
+			Registro1 registro1 = new Registro1();
+			Application.Run(new Registro1());
+
+			//Form_Perfil_Postulante form_Perfil_Postulante = new Form_Perfil_Postulante();
+			//Application.Run(new Form_Perfil_Postulante());
+
+
 		}
 	}
 }

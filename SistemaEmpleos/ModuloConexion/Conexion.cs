@@ -35,6 +35,10 @@ namespace SistemaEmpleos.ModuloConexion
 				return false;
 			}
 		}
+		public string CadenaConexion
+		{
+			get { return cadenaConexion; }
+		}
 
 		public void CerrarConexion()
 		{

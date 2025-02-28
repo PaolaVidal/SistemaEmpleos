@@ -46,6 +46,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\Obj_Usuario.cs" />
+    <Compile Include="Formularios\FormHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormHome.Designer.cs">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormVerPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormVerPerfil.Designer.cs">
+      <DependentUpon>FormVerPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form_Perfil_Empresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form_Perfil_Empresa.Designer.cs">
+      <DependentUpon>Form_Perfil_Empresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form_Perfil_Postulante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form_Perfil_Postulante.Designer.cs">
+      <DependentUpon>Form_Perfil_Postulante.cs</DependentUpon>
+    </Compile>
     <Compile Include="Datos\DOfertaEmpleo.cs" />
     <Compile Include="Entidades\EOfertaEmpleo.cs" />
     <Compile Include="Formularios\FrmCrearOfertaEmpleo.cs">
@@ -60,11 +85,23 @@
     <Compile Include="Formularios\Registro1.Designer.cs">
       <DependentUpon>Registro1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\RegistroEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\RegistroEmpresa.Designer.cs">
+      <DependentUpon>RegistroEmpresa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\RegistroNormal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\RegistroNormal.Designer.cs">
       <DependentUpon>RegistroNormal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\VerOfertasEmpleoEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\VerOfertasEmpleoEmpresa.Designer.cs">
+      <DependentUpon>VerOfertasEmpleoEmpresa.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\verOfertasEmpleos.cs">
       <SubType>Form</SubType>
@@ -72,33 +109,57 @@
     <Compile Include="Formularios\verOfertasEmpleos.Designer.cs">
       <DependentUpon>verOfertasEmpleos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\verPostulantes.cs">
+    <Compile Include="Formularios\FormverPostulantes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\verPostulantes.Designer.cs">
-      <DependentUpon>verPostulantes.cs</DependentUpon>
+    <Compile Include="Formularios\FormverPostulantes.Designer.cs">
+      <DependentUpon>FormverPostulantes.cs</DependentUpon>
     </Compile>
     <Compile Include="LogicaVerOfertasEmpleo\verOfertaEmpleoCRUD.cs" />
     <Compile Include="LogicaVerOfertasEmpleo\OfertaEmpleo.cs" />
-    <Compile Include="LogicaVerPostulante\VerPostulanteCRUD.cs" />
+    <Compile Include="LogicaVerOfertasEmpleoEmpresa\verOfertasEmpleoEmpresa.cs" />
+    <Compile Include="LogicaVerOfertasEmpleoEmpresa\verOfertasEmpleoEmpresaCrud.cs" />
+    <Compile Include="LogicaVerPostulantes\verPostulantes.cs" />
+    <Compile Include="LogicaVerPostulantes\verPostulantesCRUD.cs" />
     <Compile Include="ModuloConexion\Conexion.cs" />
+    <Compile Include="ModuloUsuario\Empresa.cs" />
+    <Compile Include="ModuloUsuario\Postulante.cs" />
+    <Compile Include="ModuloUsuario\Usuario.cs" />
     <Compile Include="Negocio\NOfertaEmpleo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\FormHome.resx">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormVerPerfil.resx">
+      <DependentUpon>FormVerPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form_Perfil_Empresa.resx">
+      <DependentUpon>Form_Perfil_Empresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form_Perfil_Postulante.resx">
+      <DependentUpon>Form_Perfil_Postulante.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmCrearOfertaEmpleo.resx">
       <DependentUpon>FrmCrearOfertaEmpleo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Registro1.resx">
       <DependentUpon>Registro1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\RegistroEmpresa.resx">
+      <DependentUpon>RegistroEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\RegistroNormal.resx">
       <DependentUpon>RegistroNormal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\VerOfertasEmpleoEmpresa.resx">
+      <DependentUpon>VerOfertasEmpleoEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\verOfertasEmpleos.resx">
       <DependentUpon>verOfertasEmpleos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\verPostulantes.resx">
-      <DependentUpon>verPostulantes.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\FormverPostulantes.resx">
+      <DependentUpon>FormverPostulantes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -113,6 +174,7 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -123,10 +185,28 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Clases\" />
-    <Folder Include="RecursosRodolfo\" />
-    <Folder Include="Resources\" />
+    <None Include="Resources\Diseño sin título %284%29.png" />
+    <None Include="Resources\Sin título %28572 x 596 px%29 %28572 x 640 px%29.png" />
+    <None Include="Resources\Diseño sin título %283%291.png" />
+    <None Include="Resources\Sin título %28572 x 596 px%29.png" />
+    <None Include="Resources\Diseño sin título %283%29.png" />
+    <None Include="Resources\lupa.png" />
+    <None Include="Resources\lista.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\mas.png" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\Agregar texto.png" />
+    <None Include="Resources\Agregar texto %281%29.png" />
+    <None Include="Resources\Agregar texto %281%291.png" />
+    <None Include="Resources\Agregar texto %283%29.png" />
+    <None Include="Resources\Agregar texto %283%291.png" />
+    <None Include="Resources\atras.png" />
+    <None Include="Resources\adelante.png" />
+    <Content Include="Resources\Black and Blue Geometric Job Seeker Employment Logo %28518 x 438 px%29 %282%29.png" />
+    <None Include="Resources\Diseño sin título %282%29.png" />
+    <None Include="Resources\Black and Blue Geometric Job Seeker Employment Logo %28518 x 438 px%29 %282%291.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
