@@ -38,6 +38,7 @@ namespace SistemaEmpleos.Formularios
 
 		}
 
+		//no da eror porque aca no hay evento buton 2
         private void btnVerMisPostulaciones_Click(object sender, EventArgs e)
         {
 			int id_usuario = Obj_Usuario.id_usuario;
