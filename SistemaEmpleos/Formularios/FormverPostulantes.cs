@@ -25,7 +25,7 @@ namespace SistemaEmpleos.Formularios
         {
             InitializeComponent();
             this.idOferta = idOferta;
-            crud = new verPostulantesCRUD(@"(Localdb)\rodolfo server", "Empleo"); // Ejemplo de conexión
+            crud = new verPostulantesCRUD(@"VALERIAV\MSSQLSERVER01", "Empleo3"); // Ejemplo de conexión
             //crud.VerificarConexion(); // Verificar conexión
             CargarPostulantes();
 
@@ -131,7 +131,7 @@ namespace SistemaEmpleos.Formularios
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
-            VerOfertasEmpleoEmpresa verOfertas = new VerOfertasEmpleoEmpresa();
+            VerOfertasEmpleoEmpresa verOfertas = new VerOfertasEmpleoEmpresa(idOferta);
             this.Close();
             verOfertas.Show();
         }

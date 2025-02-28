@@ -46,48 +46,52 @@ namespace SistemaEmpleos.LogicaVerPostulante
         /// </summary>
         public List<verOfertasEmpleoEmpresa> ObtenerOfertasPorEmpresa(int idEmpresa, int pagina)
         {
-            List<verOfertasEmpleoEmpresa> ofertas = new List<verOfertasEmpleoEmpresa>();
-            try
-            {
-                if (conexion.AbrirConexion())
-                {
-                    using (SqlCommand cmd = new SqlCommand(@"
-                        SELECT oe.id_oferta_empleo, oe.titulo, oe.fecha_publicacion, oe.estado, oe.id_empresa 
-                        FROM OfertaEmpleo oe
-                        WHERE oe.id_empresa = @IdEmpresa
-                        ORDER BY oe.fecha_publicacion DESC
-                        OFFSET @Offset ROWS FETCH NEXT @Limit ROWS ONLY", conexion.Conexion_))
-                    {
-                        cmd.Parameters.AddWithValue("@IdEmpresa", idEmpresa);
-                        cmd.Parameters.AddWithValue("@Offset", pagina * registrosPorPagina);
-                        cmd.Parameters.AddWithValue("@Limit", registrosPorPagina);
+			List<verOfertasEmpleoEmpresa> ofertas = new List<verOfertasEmpleoEmpresa>();
+			try
+			{
+				if (conexion.AbrirConexion())
+				{
+					int offset = pagina * registrosPorPagina;
+					Console.WriteLine("Offset: " + offset);
+					Console.WriteLine("Limit: " + registrosPorPagina);
 
-                        using (SqlDataReader reader = cmd.ExecuteReader())
-                        {
-                            while (reader.Read())
-                            {
-                                verOfertasEmpleoEmpresa oferta = new verOfertasEmpleoEmpresa
-                                {
-                                    Id = reader.GetInt32(0),               // Ahora se incluye el Id de la oferta
-                                    Titulo = reader.GetString(1),
-                                    FechaPublicacion = reader.GetDateTime(2),
-                                    Estado = reader.GetString(3),
-                                    IdEmpresa = reader.GetInt32(4)         // Aquí se asigna el Id de la empresa
-                                };
-                                ofertas.Add(oferta);
-                            }
-                        }
-                    }
-                    conexion.CerrarConexion();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al obtener ofertas: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+					using (SqlCommand cmd = new SqlCommand(@"
+                SELECT oe.id_oferta_empleo, oe.titulo, oe.fecha_publicacion, oe.estado, oe.id_empresa 
+                FROM OfertaEmpleo oe
+                WHERE oe.id_empresa = @IdEmpresa
+                ORDER BY oe.fecha_publicacion DESC
+                ", conexion.Conexion_)) //upset y limit quita2, más ofertas o error devolver
+					{
+						cmd.Parameters.AddWithValue("@IdEmpresa", idEmpresa);
+						//cmd.Parameters.AddWithValue("@Offset", offset);
+						//cmd.Parameters.AddWithValue("@Limit", registrosPorPagina);
 
-            return ofertas;
-        }
+						using (SqlDataReader reader = cmd.ExecuteReader())
+						{
+							while (reader.Read())
+							{
+								verOfertasEmpleoEmpresa oferta = new verOfertasEmpleoEmpresa
+								{
+									Id = reader.GetInt32(0),
+									Titulo = reader.GetString(1),
+									FechaPublicacion = reader.GetDateTime(2),
+									Estado = reader.GetString(3),
+									IdEmpresa = reader.GetInt32(4)
+								};
+								ofertas.Add(oferta);
+							}
+						}
+					}
+					conexion.CerrarConexion();
+				}
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("Error al obtener ofertas: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
+
+			return ofertas;
+		}
 
         /// <summary>
         /// Avanza a la siguiente página de ofertas publicadas por la empresa.

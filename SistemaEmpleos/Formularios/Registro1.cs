@@ -34,50 +34,21 @@ namespace SistemaEmpleos
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			
-			//string EmailTxt = txt_email.Text.Trim();
-			//string contrasenaTxt = txt_Contrasena.Text.Trim();
-
-			//Usuario user = new Usuario();
-
-			//if (user.ObtenerUsuario(EmailTxt))
-			//{
-			//	if (user.VerificarContrasena(EmailTxt, contrasenaTxt))
-			//	{
-			//		MessageBox.Show("Ingreso exitoso");
-
-			//		this.Hide();
-			//		Form_Home home = new Form_Home();
-			//		Obj_Usuario.id_usuario = user.Id_usuario; 
-			//		home.Show();
-					
-			//	}
-			//	else
-			//	{
-			//		MessageBox.Show("Correo o contraseña incorrectos");
-			//	}
-			//}
-			//else
-			//{
-			//	MessageBox.Show("El correo no está registrado. Por favor, regístrate antes de iniciar sesión.");
-			//}
-
 
 			string EmailTxt = txt_email.Text.Trim();
 			string contrasenaTxt = txt_Contrasena.Text.Trim();
 
 			Usuario user = new Usuario();
 
-			if (user.ObtenerUsuario(EmailTxt))  
+			if (user.ObtenerUsuario(EmailTxt))
 			{
-				if (user.VerificarContrasena(EmailTxt, contrasenaTxt))  
+				if (user.VerificarContrasena(EmailTxt, contrasenaTxt))
 				{
 					MessageBox.Show("Ingreso exitoso");
+					this.Hide();
+					Obj_Usuario.id_usuario = user.Id_usuario;  // Se asigna el ID del usuario
 
-					this.Hide();  
-					Obj_Usuario.id_usuario = user.Id_usuario;
-
-					
+					// Verificar tipo de usuario
 					if (user.Tipo_usuario == "P")
 					{
 						FormHome formHomePostulante = new FormHome();
@@ -85,14 +56,14 @@ namespace SistemaEmpleos
 					}
 					else if (user.Tipo_usuario == "E")
 					{
-						Obj_Usuario.id_empresa = user.Id_usuario;
-                        VerOfertasEmpleoEmpresa formEmpresa = new VerOfertasEmpleoEmpresa(user.Id_usuario);
-                        formEmpresa.Show();
-                    }
+						Obj_Usuario.id_empresa = user.Id_usuario;  // Asignamos el ID de la empresa
+						VerOfertasEmpleoEmpresa formEmpresa = new VerOfertasEmpleoEmpresa(Obj_Usuario.id_empresa);
+						formEmpresa.Show();
+					}
 					else
 					{
 						MessageBox.Show("Tipo de usuario no reconocido.");
-						this.Show();  
+						this.Show();
 					}
 				}
 				else

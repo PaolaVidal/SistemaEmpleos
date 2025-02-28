@@ -22,7 +22,7 @@ namespace SistemaEmpleos
             Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
 			verOfertasEmpleos verOfertasEmpleos = new verOfertasEmpleos();
-			VerOfertasEmpleoEmpresa verOfertasEmpleoEmpresa = new VerOfertasEmpleoEmpresa();
+			//VerOfertasEmpleoEmpresa verOfertasEmpleoEmpresa = new VerOfertasEmpleoEmpresa();
 			//Application.Run(new VerOfertasEmpleoEmpresa());
 
 

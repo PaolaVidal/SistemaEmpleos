@@ -14,7 +14,7 @@ namespace SistemaEmpleos.ModuloUsuario
 {
 	internal class Empresa:Usuario
 	{
-		private Conexion conexion = new Conexion(@"VALERIAV\MSSQLSERVER01", "Empleo2");
+		private Conexion conexion = new Conexion(@"VALERIAV\MSSQLSERVER01", "Empleo3");
 		private int id_empresa;
 		private int id_usuario;
 		private string nombre;
