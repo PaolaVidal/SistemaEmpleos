@@ -42,12 +42,13 @@
 			this.lbFechaPostulacion = new System.Windows.Forms.Label();
 			this.lbNombreTrabajo = new System.Windows.Forms.Label();
 			this.panel1 = new System.Windows.Forms.Panel();
-			this.label1 = new System.Windows.Forms.Label();
 			this.button1 = new System.Windows.Forms.Button();
 			this.btnCrearOfertaEmpleo = new System.Windows.Forms.Button();
 			this.btnHome = new System.Windows.Forms.Button();
+			this.label1 = new System.Windows.Forms.Label();
 			this.btnAnterior = new System.Windows.Forms.Button();
 			this.btnSiguiente = new System.Windows.Forms.Button();
+			this.button3 = new System.Windows.Forms.Button();
 			this.panel8.SuspendLayout();
 			this.panel6.SuspendLayout();
 			this.panel4.SuspendLayout();
@@ -197,6 +198,7 @@
 			// panel1
 			// 
 			this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
+			this.panel1.Controls.Add(this.button3);
 			this.panel1.Controls.Add(this.button1);
 			this.panel1.Controls.Add(this.btnCrearOfertaEmpleo);
 			this.panel1.Controls.Add(this.btnHome);
@@ -204,16 +206,6 @@
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(110, 728);
 			this.panel1.TabIndex = 24;
-			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(166, 679);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(416, 20);
-			this.label1.TabIndex = 25;
-			this.label1.Text = "Presiona el titulo de la oferta para ver mas detalles";
 			// 
 			// button1
 			// 
@@ -251,6 +243,16 @@
 			this.btnHome.TabIndex = 2;
 			this.btnHome.UseVisualStyleBackColor = true;
 			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Location = new System.Drawing.Point(166, 679);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(416, 20);
+			this.label1.TabIndex = 25;
+			this.label1.Text = "Presiona el titulo de la oferta para ver mas detalles";
+			// 
 			// btnAnterior
 			// 
 			this.btnAnterior.BackgroundImage = global::SistemaEmpleos.Properties.Resources.atras;
@@ -276,6 +278,20 @@
 			this.btnSiguiente.TabIndex = 22;
 			this.btnSiguiente.UseVisualStyleBackColor = true;
 			this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
+			// 
+			// button3
+			// 
+			this.button3.BackgroundImage = global::SistemaEmpleos.Properties.Resources.Diseño_sin_título__9_;
+			this.button3.FlatAppearance.BorderSize = 0;
+			this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button3.Location = new System.Drawing.Point(10, 651);
+			this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+			this.button3.Name = "button3";
+			this.button3.Size = new System.Drawing.Size(70, 59);
+			this.button3.TabIndex = 26;
+			this.button3.UseVisualStyleBackColor = true;
+			this.button3.Click += new System.EventHandler(this.button3_Click);
 			// 
 			// VerOfertasEmpleoEmpresa
 			// 
@@ -331,5 +347,6 @@
         private System.Windows.Forms.Button btnCrearOfertaEmpleo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-    }
+		private System.Windows.Forms.Button button3;
+	}
 }

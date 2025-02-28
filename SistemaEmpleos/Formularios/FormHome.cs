@@ -44,5 +44,12 @@ namespace SistemaEmpleos.Formularios
 			int id_usuario = Obj_Usuario.id_usuario;
             verOfertasEmpleos verOfertasEmpleos = new verOfertasEmpleos(id_usuario);
         }
-    }
+
+		private void button3_Click(object sender, EventArgs e)
+		{
+			Registro1 formRegistro1 = new Registro1();
+			this.Close();
+			formRegistro1.Show();
+		}
+	}
 }

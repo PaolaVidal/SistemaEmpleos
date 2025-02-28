@@ -63,6 +63,16 @@ namespace SistemaEmpleos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1 {
+            get {
+                object obj = ResourceManager.GetObject("1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap adelante {
             get {
                 object obj = ResourceManager.GetObject("adelante", resourceCulture);
@@ -143,6 +153,16 @@ namespace SistemaEmpleos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Diseño_sin_título__10_ {
+            get {
+                object obj = ResourceManager.GetObject("Diseño sin título (10)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Diseño_sin_título__2_ {
             get {
                 object obj = ResourceManager.GetObject("Diseño sin título (2)", resourceCulture);
@@ -176,6 +196,16 @@ namespace SistemaEmpleos.Properties {
         internal static System.Drawing.Bitmap Diseño_sin_título__4_ {
             get {
                 object obj = ResourceManager.GetObject("Diseño sin título (4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Diseño_sin_título__9_ {
+            get {
+                object obj = ResourceManager.GetObject("Diseño sin título (9)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

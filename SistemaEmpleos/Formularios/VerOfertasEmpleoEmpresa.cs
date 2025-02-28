@@ -100,5 +100,12 @@ namespace SistemaEmpleos.Formularios
         {
 
         }
-    }
+
+		private void button3_Click(object sender, EventArgs e)
+		{
+			Registro1 formRegistro1 = new Registro1();
+			this.Close();
+			formRegistro1.Show();
+		}
+	}
 }
