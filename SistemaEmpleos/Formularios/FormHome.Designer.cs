@@ -29,7 +29,16 @@
 		private void InitializeComponent()
 		{
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.button3 = new System.Windows.Forms.Button();
+			this.button2 = new System.Windows.Forms.Button();
+			this.btnHome = new System.Windows.Forms.Button();
+			this.button1 = new System.Windows.Forms.Button();
+			this.btnCrearOfertaEmpleo = new System.Windows.Forms.Button();
 			this.panel3 = new System.Windows.Forms.Panel();
+			this.label7 = new System.Windows.Forms.Label();
+			this.panel11 = new System.Windows.Forms.Panel();
+			this.label5 = new System.Windows.Forms.Label();
+			this.label3 = new System.Windows.Forms.Label();
 			this.panel4 = new System.Windows.Forms.Panel();
 			this.panel5 = new System.Windows.Forms.Panel();
 			this.panel6 = new System.Windows.Forms.Panel();
@@ -38,26 +47,17 @@
 			this.panel9 = new System.Windows.Forms.Panel();
 			this.label2 = new System.Windows.Forms.Label();
 			this.panel10 = new System.Windows.Forms.Panel();
-			this.label1 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
+			this.label6 = new System.Windows.Forms.Label();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.label4 = new System.Windows.Forms.Label();
-			this.panel11 = new System.Windows.Forms.Panel();
-			this.label5 = new System.Windows.Forms.Label();
-			this.label6 = new System.Windows.Forms.Label();
-			this.label7 = new System.Windows.Forms.Label();
+			this.label1 = new System.Windows.Forms.Label();
 			this.btnAnterior = new System.Windows.Forms.Button();
 			this.btnSiguiente = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.btnHome = new System.Windows.Forms.Button();
-			this.button1 = new System.Windows.Forms.Button();
-			this.btnCrearOfertaEmpleo = new System.Windows.Forms.Button();
-			this.button3 = new System.Windows.Forms.Button();
 			this.panel1.SuspendLayout();
 			this.panel3.SuspendLayout();
+			this.panel11.SuspendLayout();
 			this.panel10.SuspendLayout();
 			this.panel2.SuspendLayout();
-			this.panel11.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// panel1
@@ -74,6 +74,72 @@
 			this.panel1.Size = new System.Drawing.Size(110, 728);
 			this.panel1.TabIndex = 25;
 			// 
+			// button3
+			// 
+			this.button3.BackgroundImage = global::SistemaEmpleos.Properties.Resources.Diseño_sin_título__9_;
+			this.button3.FlatAppearance.BorderSize = 0;
+			this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button3.Location = new System.Drawing.Point(12, 649);
+			this.button3.Name = "button3";
+			this.button3.Size = new System.Drawing.Size(70, 59);
+			this.button3.TabIndex = 30;
+			this.button3.UseVisualStyleBackColor = true;
+			this.button3.Click += new System.EventHandler(this.button3_Click);
+			// 
+			// button2
+			// 
+			this.button2.BackgroundImage = global::SistemaEmpleos.Properties.Resources.user;
+			this.button2.FlatAppearance.BorderSize = 0;
+			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button2.Location = new System.Drawing.Point(21, 271);
+			this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(70, 59);
+			this.button2.TabIndex = 7;
+			this.button2.UseVisualStyleBackColor = true;
+			this.button2.Click += new System.EventHandler(this.button2_Click);
+			// 
+			// btnHome
+			// 
+			this.btnHome.BackgroundImage = global::SistemaEmpleos.Properties.Resources.home;
+			this.btnHome.FlatAppearance.BorderSize = 0;
+			this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnHome.Location = new System.Drawing.Point(21, 22);
+			this.btnHome.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+			this.btnHome.Name = "btnHome";
+			this.btnHome.Size = new System.Drawing.Size(70, 59);
+			this.btnHome.TabIndex = 6;
+			this.btnHome.UseVisualStyleBackColor = true;
+			// 
+			// button1
+			// 
+			this.button1.BackgroundImage = global::SistemaEmpleos.Properties.Resources.lupa;
+			this.button1.FlatAppearance.BorderSize = 0;
+			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button1.Location = new System.Drawing.Point(21, 190);
+			this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(70, 59);
+			this.button1.TabIndex = 4;
+			this.button1.UseVisualStyleBackColor = true;
+			// 
+			// btnCrearOfertaEmpleo
+			// 
+			this.btnCrearOfertaEmpleo.BackgroundImage = global::SistemaEmpleos.Properties.Resources.lista;
+			this.btnCrearOfertaEmpleo.FlatAppearance.BorderSize = 0;
+			this.btnCrearOfertaEmpleo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnCrearOfertaEmpleo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnCrearOfertaEmpleo.Location = new System.Drawing.Point(21, 111);
+			this.btnCrearOfertaEmpleo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+			this.btnCrearOfertaEmpleo.Name = "btnCrearOfertaEmpleo";
+			this.btnCrearOfertaEmpleo.Size = new System.Drawing.Size(70, 59);
+			this.btnCrearOfertaEmpleo.TabIndex = 3;
+			this.btnCrearOfertaEmpleo.UseVisualStyleBackColor = true;
+			// 
 			// panel3
 			// 
 			this.panel3.BackColor = System.Drawing.Color.White;
@@ -86,6 +152,49 @@
 			this.panel3.Size = new System.Drawing.Size(252, 280);
 			this.panel3.TabIndex = 27;
 			this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+			// 
+			// label7
+			// 
+			this.label7.AutoSize = true;
+			this.label7.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label7.Location = new System.Drawing.Point(16, 70);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(228, 140);
+			this.label7.TabIndex = 33;
+			this.label7.Text = "Buscamos analista financiero\r\ncon experiencia en inversiones,\r\ncon conocimientos " +
+    "altos en \r\nExcell y conocimiento de \r\nhardware...\r\n\r\n\r\n";
+			// 
+			// panel11
+			// 
+			this.panel11.BackColor = System.Drawing.Color.Gold;
+			this.panel11.Controls.Add(this.label5);
+			this.panel11.Location = new System.Drawing.Point(140, 234);
+			this.panel11.Name = "panel11";
+			this.panel11.Size = new System.Drawing.Size(96, 31);
+			this.panel11.TabIndex = 33;
+			// 
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label5.Location = new System.Drawing.Point(7, 5);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(86, 16);
+			this.label5.TabIndex = 32;
+			this.label5.Text = "En proceso";
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.Location = new System.Drawing.Point(34, 29);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(189, 24);
+			this.label3.TabIndex = 31;
+			this.label3.Text = "Analista Financiero";
 			// 
 			// panel4
 			// 
@@ -165,27 +274,17 @@
 			this.panel10.TabIndex = 26;
 			this.panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
 			// 
-			// label1
+			// label6
 			// 
-			this.label1.AutoSize = true;
-			this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(31, 29);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(183, 24);
-			this.label1.TabIndex = 30;
-			this.label1.Text = "Desarrollador Java";
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(34, 29);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(189, 24);
-			this.label3.TabIndex = 31;
-			this.label3.Text = "Analista Financiero";
+			this.label6.AutoSize = true;
+			this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label6.Location = new System.Drawing.Point(16, 70);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(233, 80);
+			this.label6.TabIndex = 32;
+			this.label6.Text = "Buscamos desarrollador Java \r\ncon experiencia en Spring, \r\nde 2 a 4 años de exper" +
+    "iencia,\r\n con disponibilidad de horarios...";
 			// 
 			// panel2
 			// 
@@ -207,49 +306,16 @@
 			this.label4.TabIndex = 32;
 			this.label4.Text = "En proceso";
 			// 
-			// panel11
+			// label1
 			// 
-			this.panel11.BackColor = System.Drawing.Color.Gold;
-			this.panel11.Controls.Add(this.label5);
-			this.panel11.Location = new System.Drawing.Point(140, 234);
-			this.panel11.Name = "panel11";
-			this.panel11.Size = new System.Drawing.Size(96, 31);
-			this.panel11.TabIndex = 33;
-			// 
-			// label5
-			// 
-			this.label5.AutoSize = true;
-			this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.Location = new System.Drawing.Point(7, 5);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(86, 16);
-			this.label5.TabIndex = 32;
-			this.label5.Text = "En proceso";
-			// 
-			// label6
-			// 
-			this.label6.AutoSize = true;
-			this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label6.Location = new System.Drawing.Point(16, 70);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(233, 80);
-			this.label6.TabIndex = 32;
-			this.label6.Text = "Buscamos desarrollador Java \r\ncon experiencia en Spring, \r\nde 2 a 4 años de exper" +
-    "iencia,\r\n con disponibilidad de horarios...";
-			// 
-			// label7
-			// 
-			this.label7.AutoSize = true;
-			this.label7.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label7.Location = new System.Drawing.Point(16, 70);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(228, 140);
-			this.label7.TabIndex = 33;
-			this.label7.Text = "Buscamos analista financiero\r\ncon experiencia en inversiones,\r\ncon conocimientos " +
-    "altos en \r\nExcell y conocimiento de \r\nhardware...\r\n\r\n\r\n";
+			this.label1.AutoSize = true;
+			this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Location = new System.Drawing.Point(31, 29);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(183, 24);
+			this.label1.TabIndex = 30;
+			this.label1.Text = "Desarrollador Java";
 			// 
 			// btnAnterior
 			// 
@@ -274,71 +340,6 @@
 			this.btnSiguiente.Size = new System.Drawing.Size(85, 40);
 			this.btnSiguiente.TabIndex = 24;
 			this.btnSiguiente.UseVisualStyleBackColor = true;
-			// 
-			// button2
-			// 
-			this.button2.BackgroundImage = global::SistemaEmpleos.Properties.Resources.user;
-			this.button2.FlatAppearance.BorderSize = 0;
-			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button2.Location = new System.Drawing.Point(21, 271);
-			this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(70, 59);
-			this.button2.TabIndex = 7;
-			this.button2.UseVisualStyleBackColor = true;
-			// 
-			// btnHome
-			// 
-			this.btnHome.BackgroundImage = global::SistemaEmpleos.Properties.Resources.home;
-			this.btnHome.FlatAppearance.BorderSize = 0;
-			this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnHome.Location = new System.Drawing.Point(21, 22);
-			this.btnHome.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-			this.btnHome.Name = "btnHome";
-			this.btnHome.Size = new System.Drawing.Size(70, 59);
-			this.btnHome.TabIndex = 6;
-			this.btnHome.UseVisualStyleBackColor = true;
-			// 
-			// button1
-			// 
-			this.button1.BackgroundImage = global::SistemaEmpleos.Properties.Resources.lupa;
-			this.button1.FlatAppearance.BorderSize = 0;
-			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button1.Location = new System.Drawing.Point(21, 190);
-			this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(70, 59);
-			this.button1.TabIndex = 4;
-			this.button1.UseVisualStyleBackColor = true;
-			// 
-			// btnCrearOfertaEmpleo
-			// 
-			this.btnCrearOfertaEmpleo.BackgroundImage = global::SistemaEmpleos.Properties.Resources.lista;
-			this.btnCrearOfertaEmpleo.FlatAppearance.BorderSize = 0;
-			this.btnCrearOfertaEmpleo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnCrearOfertaEmpleo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnCrearOfertaEmpleo.Location = new System.Drawing.Point(21, 111);
-			this.btnCrearOfertaEmpleo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-			this.btnCrearOfertaEmpleo.Name = "btnCrearOfertaEmpleo";
-			this.btnCrearOfertaEmpleo.Size = new System.Drawing.Size(70, 59);
-			this.btnCrearOfertaEmpleo.TabIndex = 3;
-			this.btnCrearOfertaEmpleo.UseVisualStyleBackColor = true;
-			// 
-			// button3
-			// 
-			this.button3.BackgroundImage = global::SistemaEmpleos.Properties.Resources.Diseño_sin_título__9_;
-			this.button3.FlatAppearance.BorderSize = 0;
-			this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button3.Location = new System.Drawing.Point(12, 649);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(70, 59);
-			this.button3.TabIndex = 30;
-			this.button3.UseVisualStyleBackColor = true;
-			this.button3.Click += new System.EventHandler(this.button3_Click);
 			// 
 			// FormHome
 			// 
@@ -366,12 +367,12 @@
 			this.panel1.ResumeLayout(false);
 			this.panel3.ResumeLayout(false);
 			this.panel3.PerformLayout();
+			this.panel11.ResumeLayout(false);
+			this.panel11.PerformLayout();
 			this.panel10.ResumeLayout(false);
 			this.panel10.PerformLayout();
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
-			this.panel11.ResumeLayout(false);
-			this.panel11.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

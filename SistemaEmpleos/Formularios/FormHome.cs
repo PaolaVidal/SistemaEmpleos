@@ -43,5 +43,10 @@ namespace SistemaEmpleos.Formularios
 			formRegistro1.Show();
 			this.Close();
 		}
+
+		private void button2_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }
