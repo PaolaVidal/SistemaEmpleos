@@ -73,6 +73,12 @@
     <Compile Include="Formularios\Form_Perfil_Postulante.Designer.cs">
       <DependentUpon>Form_Perfil_Postulante.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FrmOfertaEmpleo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmOfertaEmpleo.Designer.cs">
+      <DependentUpon>FrmOfertaEmpleo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Registro1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Form_Perfil_Postulante.resx">
       <DependentUpon>Form_Perfil_Postulante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmOfertaEmpleo.resx">
+      <DependentUpon>FrmOfertaEmpleo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Registro1.resx">
       <DependentUpon>Registro1.cs</DependentUpon>
