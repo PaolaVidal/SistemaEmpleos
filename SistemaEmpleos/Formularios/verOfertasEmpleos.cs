@@ -115,5 +115,12 @@ namespace SistemaEmpleos.Formularios
         {
 
         }
+
+		private void btnAtras_Click(object sender, EventArgs e)
+        {
+            this.Close();
+			FormHome formHome = new FormHome();
+			formHome.Show();
+		}
     }
 }
