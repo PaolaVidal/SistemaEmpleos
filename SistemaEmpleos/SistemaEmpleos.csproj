@@ -46,6 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Datos\DOfertaEmpleo.cs" />
+    <Compile Include="Entidades\EOfertaEmpleo.cs" />
+    <Compile Include="Formularios\FrmCrearOfertaEmpleo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmCrearOfertaEmpleo.Designer.cs">
+      <DependentUpon>FrmCrearOfertaEmpleo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Registro1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,8 +82,12 @@
     <Compile Include="LogicaVerOfertasEmpleo\OfertaEmpleo.cs" />
     <Compile Include="LogicaVerPostulante\VerPostulanteCRUD.cs" />
     <Compile Include="ModuloConexion\Conexion.cs" />
+    <Compile Include="Negocio\NOfertaEmpleo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\FrmCrearOfertaEmpleo.resx">
+      <DependentUpon>FrmCrearOfertaEmpleo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Registro1.resx">
       <DependentUpon>Registro1.cs</DependentUpon>
     </EmbeddedResource>
