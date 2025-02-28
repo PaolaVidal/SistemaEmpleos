@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SistemaEmpleos.Formularios
 {
-	public partial class FormHomeEmpresa : Form
+	public partial class FormHome : Form
 	{
-		public FormHomeEmpresa()
+		public FormHome()
 		{
 			InitializeComponent();
 		}

@@ -80,8 +80,8 @@ namespace SistemaEmpleos
 					
 					if (user.Tipo_usuario == "P")
 					{
-						Form_Perfil_Postulante formPostulante = new Form_Perfil_Postulante();
-						formPostulante.Show();
+						FormHome formHomePostulante = new FormHome();
+						formHomePostulante.Show();
 					}
 					else if (user.Tipo_usuario == "E")
 					{

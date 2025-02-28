@@ -47,11 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Obj_Usuario.cs" />
-    <Compile Include="Formularios\FormHomeEmpresa.cs">
+    <Compile Include="Formularios\FormHome.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FormHomeEmpresa.Designer.cs">
-      <DependentUpon>FormHomeEmpresa.cs</DependentUpon>
+    <Compile Include="Formularios\FormHome.Designer.cs">
+      <DependentUpon>FormHome.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\FormVerPerfil.cs">
       <SubType>Form</SubType>
@@ -119,8 +119,8 @@
     <Compile Include="ModuloUsuario\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formularios\FormHomeEmpresa.resx">
-      <DependentUpon>FormHomeEmpresa.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\FormHome.resx">
+      <DependentUpon>FormHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FormVerPerfil.resx">
       <DependentUpon>FormVerPerfil.cs</DependentUpon>

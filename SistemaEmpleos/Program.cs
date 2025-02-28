@@ -26,11 +26,11 @@ namespace SistemaEmpleos
 			//Application.Run(new VerOfertasEmpleoEmpresa());
 
 
-			//Registro1 registro1 = new Registro1();
-			//Application.Run(new Registro1());
+			Registro1 registro1 = new Registro1();
+			Application.Run(new Registro1());
 
-			Form_Perfil_Postulante form_Perfil_Postulante = new Form_Perfil_Postulante();
-			Application.Run(new Form_Perfil_Postulante());
+			//Form_Perfil_Postulante form_Perfil_Postulante = new Form_Perfil_Postulante();
+			//Application.Run(new Form_Perfil_Postulante());
 
 
 		}
