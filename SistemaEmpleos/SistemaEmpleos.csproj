@@ -71,6 +71,14 @@
     <Compile Include="Formularios\Form_Perfil_Postulante.Designer.cs">
       <DependentUpon>Form_Perfil_Postulante.cs</DependentUpon>
     </Compile>
+    <Compile Include="Datos\DOfertaEmpleo.cs" />
+    <Compile Include="Entidades\EOfertaEmpleo.cs" />
+    <Compile Include="Formularios\FrmCrearOfertaEmpleo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmCrearOfertaEmpleo.Designer.cs">
+      <DependentUpon>FrmCrearOfertaEmpleo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Registro1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +125,7 @@
     <Compile Include="ModuloUsuario\Empresa.cs" />
     <Compile Include="ModuloUsuario\Postulante.cs" />
     <Compile Include="ModuloUsuario\Usuario.cs" />
+    <Compile Include="Negocio\NOfertaEmpleo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\FormHome.resx">
@@ -130,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Form_Perfil_Postulante.resx">
       <DependentUpon>Form_Perfil_Postulante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmCrearOfertaEmpleo.resx">
+      <DependentUpon>FrmCrearOfertaEmpleo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Registro1.resx">
       <DependentUpon>Registro1.cs</DependentUpon>
