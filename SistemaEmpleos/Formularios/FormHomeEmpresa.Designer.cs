@@ -1,6 +1,6 @@
 ﻿namespace SistemaEmpleos.Formularios
 {
-	partial class FormHome
+	partial class FormHomeEmpresa
 	{
 		/// <summary>
 		/// Required designer variable.
